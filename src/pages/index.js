@@ -1,22 +1,19 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { graphql, StaticQuery } from 'gatsby'
-import Post from '../components/Post'
-import { Row, Col } from 'reactstrap'
-import Sidebar from '../components/Sidebar'
+import { graphql, StaticQuery } from "gatsby"
+import Post from "../components/Post"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout pageTitle="Welcome to Aberrant Winds!">
     <SEO title="Home" />
-    <h1>Home page</h1>
-    <Row>
-      <Col md="8">
-        <StaticQuery query={indexQuery} render={data => {
+    <StaticQuery
+      query={indexQuery}
+      render={data => {
         return (
           <div>
             {data.allMarkdownRemark.edges.map(({ node }) => (
-              <Post 
+              <Post
                 key={node.id}
                 title={node.frontmatter.title}
                 author={node.frontmatter.author}
@@ -25,39 +22,35 @@ const IndexPage = () => (
                 body={node.excerpt}
                 fluid={node.frontmatter.image.childImageSharp.fluid}
                 tags={node.frontmatter.tags}
-                />
-              ))}
-            </div>
-          )
-        }}/>
-      </Col>
-      <Col md="4">
-        <Sidebar/>
-      </Col>
-    </Row>
+              />
+            ))}
+          </div>
+        )
+      }}
+    />
   </Layout>
 )
 
 const indexQuery = graphql`
-  query{
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
-      edges{
-        node{
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
           id
-          frontmatter{
+          frontmatter {
             title
             date(formatString: "MMM Do YYYY")
             author
             tags
-            image{
-              childImageSharp{
-                fluid(maxWidth: 600){
+            image {
+              childImageSharp {
+                fluid(maxWidth: 600) {
                   ...GatsbyImageSharpFluid
                 }
               }
             }
           }
-          fields{
+          fields {
             slug
           }
           excerpt
