@@ -2,7 +2,6 @@
 title: 'Second Post - HTML'
 date: 2021-12-02 14:00:00
 author: 'fergenberg'
-path: '/second-post'
 image: '../../images/javascript.jpg'
 tags:
  - code 

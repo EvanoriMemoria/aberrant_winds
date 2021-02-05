@@ -26,7 +26,6 @@ const Footer = () => (
                         rel="noopener noreferrer" 
                         className="twitter"
                     >
-                        <i class="fab fa-twitter fa-2x" />
                         <FontAwesomeIcon icon={['fab', 'twitter']} size="2x" />
                     </a>
                 </li>
