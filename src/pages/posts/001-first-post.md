@@ -1,7 +1,7 @@
 ---
 title: 'First Post - Introduction'
 date: 2021-12-1 14:00:00
-author: 'fergenbergel'
+author: 'John Doe'
 image: '../../images/javascript.jpg'
 tags: 
  - code

@@ -1,7 +1,7 @@
 ---
 title: 'Third Post - CSS'
 date: 2021-12-03 14:00:00
-author: 'john'
+author: 'John Doe'
 image: '../../images/javascript.jpg'
 tags: 
  - design
