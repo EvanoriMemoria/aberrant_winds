@@ -31,39 +31,47 @@ const Sidebar = ({ author, authorFluid }) => (
                   rel="noopener noreferrer"
                   className="facebook"
                 >
-                  <FontAwesomeIcon icon={["fab", "facebook"]} size="lg" />
+                  <FontAwesomeIcon icon={["fab", "facebook"]} size="2x" />
                 </a>
+              </li>
+              <li>
                 <a
                   href={author.twitter}
                   targe="_blank"
                   rel="noopener noreferrer"
                   className="twitter"
                 >
-                  <FontAwesomeIcon icon={["fab", "twitter"]} size="lg" />
+                  <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" />
                 </a>
+              </li>
+              <li>
                 <a
                   href={author.instagram}
                   targe="_blank"
                   rel="noopener noreferrer"
                   className="instagram"
                 >
-                  <FontAwesomeIcon icon={["fab", "instagram"]} size="lg" />
+                  <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" />
                 </a>
+              </li>
+              <li>
                 <a
                   href={author.google}
                   targe="_blank"
                   rel="noopener noreferrer"
                   className="google"
                 >
-                  <FontAwesomeIcon icon={["fab", "google"]} size="lg" />
+                  <FontAwesomeIcon icon={["fab", "google"]} size="2x" />
                 </a>
+              </li>
+              <li>
                 <a
                   href={author.linkedin}
                   targe="_blank"
                   rel="noopener noreferrer"
                   className="linkedin"
                 >
-                  <FontAwesomeIcon icon={["fab", "linkedin"]} size="lg" />
+                  <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" />
                 </a>
               </li>
             </ul>

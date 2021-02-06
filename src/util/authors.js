@@ -23,4 +23,4 @@ const authors = [
   },
 ]
 
-module.expors = authors
+module.exports = authors
