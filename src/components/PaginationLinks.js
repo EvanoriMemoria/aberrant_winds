@@ -19,13 +19,13 @@ const PaginationLinks = ({ currentPage, numberOfPages }) => {
         </PaginationItem>
       )}
         {Array.from({ length: numberOfPages}, (_, i) => currentPage === i + 1 ? (
-            <PaginationItem active key={`page-number$(i+1)`}>
+            <PaginationItem active key={`page-number${i+1}`}>
                 <PaginationLink href={`/${i === 0 ? '' : 'page/' + (i + 1)}`}>
                     {i + 1}
                 </PaginationLink>
             </PaginationItem>
         ) : (
-            <PaginationItem key={`page-number$(i+1)`}>
+            <PaginationItem key={`page-number${i+1}`}>
                 <PaginationLink href={`/${i === 0 ? '' : 'page/' + (i + 1)}`}>
                     {i + 1}
                 </PaginationLink>
