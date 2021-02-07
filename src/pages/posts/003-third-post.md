@@ -1,11 +1,12 @@
 ---
-title: 'Third Post - CSS'
+title: 'Edge of Infinity'
 date: 2021-12-03 14:00:00
-author: 'John Doe'
+author: 'fergenbergel'
 image: '../../images/javascript.jpg'
 tags: 
- - design
- - tutorial
+ - EOI
+ - minecraft
+ - modded
 ---
 
 More content in markdown because markdown is super fly. More content in markdown because markdown is super fly. More content in markdown because markdown is super fly. More content in markdown because markdown is super fly. More content in markdown because markdown is super fly. More content in markdown because markdown is super fly. More content in markdown because markdown is super fly. More content in markdown because markdown is super fly. More content in markdown because markdown is super fly. More content in markdown because markdown is super fly. More content in markdown because markdown is super fly. More content in markdown because markdown is super fly. More content in markdown because markdown is super fly. More content in markdown because markdown is super fly. More content in markdown because markdown is super fly. More content in markdown because markdown is super fly. More content in markdown because markdown is super fly. More content in markdown because markdown is super fly. More content in markdown because markdown is super fly. 

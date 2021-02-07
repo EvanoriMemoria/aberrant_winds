@@ -1,11 +1,13 @@
 ---
-title: 'Second Post - HTML'
+title: 'Rebirth of the Night Beta'
 date: 2021-12-02 14:00:00
-author: 'Jane Doe'
+author: 'fergenbergel'
 image: '../../images/javascript.jpg'
 tags:
- - code 
- - html
+ - rebn
+ - beta
+ - minecraft
+ - modded
 ---
 
-HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.HTML is happening today they say.
+This is the offical Aberrant Winds Rebirth of the Night modpack server!

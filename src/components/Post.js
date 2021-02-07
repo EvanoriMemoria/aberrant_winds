@@ -11,7 +11,7 @@ import {
 import Img from "gatsby-image"
 import { slugify } from "../util/utilityFunctions"
 
-const Post = ({ title, author, slug, date, body, fluid, tags }) => {
+const Post = ({ title, author, slug, body, fluid, tags }) => {
   return (
     <Card>
       <Link to={slug}>
@@ -22,7 +22,7 @@ const Post = ({ title, author, slug, date, body, fluid, tags }) => {
           <Link to={slug}>{title}</Link>
         </CardTitle>
         <CardSubtitle>
-          <span className="text-info">{date}</span> by{" "}
+          Hosted by{" "}
           <span className="text-info">{author}</span>
         </CardSubtitle>
         <CardText>{body}</CardText>
