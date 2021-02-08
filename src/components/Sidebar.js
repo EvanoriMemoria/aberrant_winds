@@ -27,7 +27,7 @@ const Sidebar = ({ author, authorFluid }) => (
               <li>
                 <a
                   href={author.facebook}
-                  targe="_blank"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="facebook"
                 >
@@ -37,7 +37,7 @@ const Sidebar = ({ author, authorFluid }) => (
               <li>
                 <a
                   href={author.twitter}
-                  targe="_blank"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="twitter"
                 >
@@ -47,7 +47,7 @@ const Sidebar = ({ author, authorFluid }) => (
               <li>
                 <a
                   href={author.instagram}
-                  targe="_blank"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="instagram"
                 >
@@ -56,18 +56,8 @@ const Sidebar = ({ author, authorFluid }) => (
               </li>
               <li>
                 <a
-                  href={author.google}
-                  targe="_blank"
-                  rel="noopener noreferrer"
-                  className="google"
-                >
-                  <FontAwesomeIcon icon={["fab", "google"]} size="2x" />
-                </a>
-              </li>
-              <li>
-                <a
                   href={author.linkedin}
-                  targe="_blank"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="linkedin"
                 >
@@ -82,18 +72,18 @@ const Sidebar = ({ author, authorFluid }) => (
     <Card>
       <CardBody>
         <CardTitle className="text-center text-uppercase mb-3">
-          Newsletter
+          <FontAwesomeIcon icon={["fab", "discord"]} size="4x" />
         </CardTitle>
         <Form className="text-center">
-          <FormGroup>
-            <Input
-              type="email"
-              name="email"
-              placeholder="Your email address."
-            />
-          </FormGroup>
           <button className="btn btn-outline-success text-uppercase">
-            Subscribe
+            <a
+              href="https://discord.gg/8jBA5dafAG"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              Join the Discord!{" "}
+            </a>
           </button>
         </Form>
       </CardBody>

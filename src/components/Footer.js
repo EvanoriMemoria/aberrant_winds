@@ -10,7 +10,7 @@ const Footer = () => (
         <li>
           <a
             href="https://www.facebook.com"
-            targets="_blank"
+            target="_blank"
             rel="noopener noreferrer"
             className="facebook"
           >
@@ -19,8 +19,8 @@ const Footer = () => (
         </li>
         <li>
           <a
-            href="https://www.facebook.com"
-            targets="_blank"
+            href="https://www.twitter.com"
+            target="_blank"
             rel="noopener noreferrer"
             className="twitter"
           >
@@ -30,7 +30,7 @@ const Footer = () => (
         <li>
           <a
             href="https://www.facebook.com"
-            targets="_blank"
+            target="_blank"
             rel="noopener noreferrer"
             className="instagram"
           >
@@ -39,18 +39,18 @@ const Footer = () => (
         </li>
         <li>
           <a
-            href="https://www.facebook.com"
-            targets="_blank"
+            href="https://www.discord.com"
+            target="_blank"
             rel="noopener noreferrer"
             className="google"
           >
-            <FontAwesomeIcon icon={["fab", "google"]} size="2x" />
+            <FontAwesomeIcon icon={["fab", "discord"]} size="2x" />
           </a>
         </li>
         <li>
           <a
             href="https://www.facebook.com"
-            targets="_blank"
+            target="_blank"
             rel="noopener noreferrer"
             className="linkedin"
           >
