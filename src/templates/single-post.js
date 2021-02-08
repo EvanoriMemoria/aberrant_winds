@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql, Link } from "gatsby"
 import SEO from "../components/seo"
-import { Badge, Card, CardBody, CardSubtitle } from "reactstrap"
+import { Badge, Card, CardBody, CardSubtitle, CardText } from "reactstrap"
 import Img from "gatsby-image"
 import { slugify } from "../util/utilityFunctions"
 import authors from "../util/authors"
@@ -28,9 +28,9 @@ const SinglePost = ({ data, pageContext }) => {
         />
         <CardBody>
           <CardSubtitle>
-            <span className="text-info">{post.date}</span> by{" "}
-            <span className="text-info">{post.author}</span>
+             Ip Address:{' '} <span className="text-info">{post.address}</span>
           </CardSubtitle>
+          <CardText></CardText>
           <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
           <ul className="post-tags">
             {post.tags.map(tag => (
@@ -43,7 +43,7 @@ const SinglePost = ({ data, pageContext }) => {
           </ul>
         </CardBody>
       </Card>
-      <h3 className="text-center">Share this post</h3>
+      <h3 className="text-center">Share this Server</h3>
       <div className="text-center social-share-links">
         <ul>
           <li>
@@ -120,6 +120,7 @@ export const postQuery = graphql`
         author
         date(formatString: "MMM Do YYYY")
         tags
+        address
         image {
           childImageSharp {
             fluid(maxWidth: 700) {

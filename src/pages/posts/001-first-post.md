@@ -1,12 +1,14 @@
 ---
-title: 'Rebirth of the Night'
+title: 'Rebirth of the Night Beta Branch'
 date: 2021-12-1 14:00:00
 author: 'fergenbergel'
-image: '../../images/javascript.jpg'
+image: '../../images/rotn-banner.png'
+address: 'rev.bendy.cool'
 tags: 
- - rebn
- - minecraft
- - modded
+ - ROTN
+ - Modded
+ - Minecraft
+ - Beta
 ---
 
-Welcome to Code blog, I hope you enjoy our content.Welcome to Code blog, doing a test.
+This is the official Aberrant Winds' Rebirth of the Night Beta Branch server!

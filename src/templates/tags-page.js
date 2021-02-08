@@ -9,7 +9,7 @@ const tagsPage = ({ pageContext }) => {
   return (
     <Layout pageTitle="All Tags">
       <SEO title="All tags" keywords={["tags", "topics"]} />
-      <uL>
+      <ul>
         {tags.map(tag => (
           <li key={tag} style={{ marginBottom: "10px" }}>
             <Button color="primary" href={`/tag/${slugify(tag)}`}>
@@ -17,7 +17,7 @@ const tagsPage = ({ pageContext }) => {
             </Button>
           </li>
         ))}
-      </uL>
+      </ul>
     </Layout>
   )
 }
