@@ -4,6 +4,9 @@ import Post from "../components/Post"
 import { graphql } from "gatsby"
 import authors from "../util/authors"
 
+// Page which displays posts by {author}
+// Currently appears to generate a slug which goes to /author/fergenbergel/edge-of-infinity
+// instead of /edge-of-infinity
 const authorPosts = ({ data, pageContext }) => {
   const { totalCount } = data.allMarkdownRemark
   const author = authors.find(x => x.name === pageContext.authorName)

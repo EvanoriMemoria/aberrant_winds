@@ -107,7 +107,6 @@ const Sidebar = ({ author, authorFluid }) => (
         <CardTitle className="text-center text-uppercase mb-3">
           Players Online
         </CardTitle>
-<<<<<<< HEAD
         <StaticQuery
           query={sidebarQuery}
           render={data => (
@@ -129,9 +128,6 @@ const Sidebar = ({ author, authorFluid }) => (
             </div>
           )}
         />
-=======
-        There are <span data-playercounter-ip="mc.hypixel.net">0</span> players on Hypixel right now.
->>>>>>> 4af90d271ade516554dfc4cf22161cdef31870c4
       </CardBody>
     </Card>
   </div>

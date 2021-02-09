@@ -20,11 +20,11 @@ exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
   const templates = {
-      singlePost: path.resolve("src/templates/single-post.js"),
-      tagsPage: path.resolve("src/templates/tags-page.js"),
-      tagposts: path.resolve("src/templates/tag-posts.js"),
-      postList: path.resolve("src/templates/post-list.js"),
-      authorPosts: path.resolve("src/templates/author-posts.js"),
+    singlePost: path.resolve("src/templates/single-post.js"),
+    tagsPage: path.resolve("src/templates/tags-page.js"),
+    tagposts: path.resolve("src/templates/tag-posts.js"),
+    postList: path.resolve("src/templates/post-list.js"),
+    authorPosts: path.resolve("src/templates/author-posts.js"),
   }
 
   return graphql(`
@@ -65,27 +65,27 @@ exports.createPages = ({ actions, graphql }) => {
     // Create and populate an array of all tags
     let tags = []
     _.each(posts, edge => {
-        if(_.get(edge, 'node.frontmatter.tags')){
-            tags = tags.concat(edge.node.frontmatter.tags)
-        }
+      if (_.get(edge, "node.frontmatter.tags")) {
+        tags = tags.concat(edge.node.frontmatter.tags)
+      }
     })
 
     // Create an object containing the number of times a tag appears.
     let tagPostCounts = {}
     tags.forEach(tag => {
-        tagPostCounts[tag] = (tagPostCounts[tag] || 0) +1;
+      tagPostCounts[tag] = (tagPostCounts[tag] || 0) + 1
     })
 
     // Eliminate duplicate entries
     tags = _.uniq(tags)
 
     createPage({
-        path: `/tags`,
-        component: templates.tagsPage,
-        context: {
-          tags,
-          tagPostCounts
-        }
+      path: `/tags`,
+      component: templates.tagsPage,
+      context: {
+        tags,
+        tagPostCounts,
+      },
     })
 
     // Create tag posts pages
@@ -95,7 +95,7 @@ exports.createPages = ({ actions, graphql }) => {
         component: templates.tagposts,
         context: {
           tag,
-        }
+        },
       })
     })
 
@@ -106,7 +106,7 @@ exports.createPages = ({ actions, graphql }) => {
       const isFirstPage = index === 0
       const currentPage = index + 1
 
-      if(isFirstPage) return
+      if (isFirstPage) return
 
       createPage({
         path: `/page/${currentPage}`,
@@ -115,18 +115,10 @@ exports.createPages = ({ actions, graphql }) => {
           limit: postsPerPage,
           skip: index * postsPerPage,
           currentPage,
-          numberOfPages
-        }
+          numberOfPages,
+        },
       })
     })
-
-    // Gets the server info
-    new PlayerCounter({
-      element: element,
-      ip: 'server ip',
-      format: '{online}/{max}', // default {online}
-      refreshRate: 60 * 1000 // default 1m
-    });
 
     authors.forEach(author => {
       createPage({
@@ -134,8 +126,8 @@ exports.createPages = ({ actions, graphql }) => {
         component: templates.authorPosts,
         context: {
           authorName: author.name,
-          imageUrl: author.imageUrl
-        }
+          imageUrl: author.imageUrl,
+        },
       })
     })
   })
