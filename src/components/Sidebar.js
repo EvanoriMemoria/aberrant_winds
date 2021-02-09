@@ -11,9 +11,13 @@ import {
 import { graphql, Link, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Helmet from 'react-helmet'
 
 const Sidebar = ({ author, authorFluid }) => (
   <div>
+    <Helmet>
+      <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+    </Helmet>
     {author && (
       <Card>
         <Img className="card-image-top" fluid={authorFluid} />
@@ -105,30 +109,7 @@ const Sidebar = ({ author, authorFluid }) => (
         <CardTitle className="text-center text-uppercase mb-3">
           Recent Posts
         </CardTitle>
-        <StaticQuery
-          query={sidebarQuery}
-          render={data => (
-            <div>
-              {data.allMarkdownRemark.edges.map(({ node }) => (
-                <Card key={node.id}>
-                  <Link to={node.fields.slug}>
-                    <Img
-                      className="card-image-top"
-                      fluid={node.frontmatter.image.childImageSharp.fluid}
-                    />
-                  </Link>
-                  <CardBody>
-                    <CardTitle>
-                      <Link to={node.fields.slug}>
-                        {node.frontmatter.title}
-                      </Link>
-                    </CardTitle>
-                  </CardBody>
-                </Card>
-              ))}
-            </div>
-          )}
-        />
+        There are <span data-playercounter-ip="mc.hypixel.net">0</span> players on Hypixel right now.
       </CardBody>
     </Card>
   </div>
