@@ -120,6 +120,14 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
 
+    // Gets the server info
+    new PlayerCounter({
+      element: element,
+      ip: 'server ip',
+      format: '{online}/{max}', // default {online}
+      refreshRate: 60 * 1000 // default 1m
+    });
+
     authors.forEach(author => {
       createPage({
         path: `/author/${slugify(author.name)}`,

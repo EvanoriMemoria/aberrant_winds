@@ -5,15 +5,17 @@ import {
   CardBody,
   CardText,
   Form,
-  FormGroup,
-  Input,
 } from "reactstrap"
 import { graphql, Link, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Helmet from 'react-helmet'
 
 const Sidebar = ({ author, authorFluid }) => (
   <div>
+    <Helmet>
+      <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+    </Helmet>
     {author && (
       <Card>
         <Img className="card-image-top" fluid={authorFluid} />
@@ -103,7 +105,7 @@ const Sidebar = ({ author, authorFluid }) => (
     <Card>
       <CardBody>
         <CardTitle className="text-center text-uppercase mb-3">
-          Recent Posts
+          Players Online
         </CardTitle>
         <StaticQuery
           query={sidebarQuery}
@@ -111,18 +113,15 @@ const Sidebar = ({ author, authorFluid }) => (
             <div>
               {data.allMarkdownRemark.edges.map(({ node }) => (
                 <Card key={node.id}>
-                  <Link to={node.fields.slug}>
-                    <Img
-                      className="card-image-top"
-                      fluid={node.frontmatter.image.childImageSharp.fluid}
-                    />
-                  </Link>
                   <CardBody>
                     <CardTitle>
                       <Link to={node.fields.slug}>
                         {node.frontmatter.title}
                       </Link>
                     </CardTitle>
+                    <CardText>
+                      <span data-playercounter-ip={node.frontmatter.address}>0</span> Players currently online.
+                    </CardText>
                   </CardBody>
                 </Card>
               ))}
@@ -145,6 +144,7 @@ const sidebarQuery = graphql`
           id
           frontmatter {
             title
+            address
             image {
               childImageSharp {
                 fluid(maxWidth: 300) {
