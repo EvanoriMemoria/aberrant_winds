@@ -14,12 +14,12 @@ import { slugify } from "../util/utilityFunctions"
 const Post = ({ title, author, slug, body, fluid, tags }) => {
   return (
     <Card>
-      <Link to={slug}>
+      <Link to={`/${slug}`}>
         <Img className="card-image-top" fluid={fluid} />
       </Link>
       <CardBody>
         <CardTitle>
-          <Link to={slug}>{title}</Link>
+          <Link to={`/${slug}`}>{title}</Link>
         </CardTitle>
         <CardSubtitle>
           Hosted by{" "}
@@ -38,7 +38,7 @@ const Post = ({ title, author, slug, body, fluid, tags }) => {
           ))}
         </ul>
         <Link
-          to={slug}
+          to={`/${slug}`}
           className="btn btn-outline-primary float-right text-uppercase"
         >
           Read more
