@@ -25,7 +25,7 @@ const authors = [
     name: "fergenbergel",
     imageUrl: "jane.jpg",
     bio:
-      "Fergenbergel likes to go for hikes in the mountains, play Path of Exile, and host modded minecraft servers. He has a bachelor's degree in Computer Science.",
+      "He likes to go for hikes in the mountains, play co-op games with friends, and host modded minecraft servers.",
     facebook: "https://www.facebook.com",
     twitter: "https://www.twitter.com",
     instagram: "https://www.instagram.com",
