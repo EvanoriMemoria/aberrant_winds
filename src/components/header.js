@@ -32,6 +32,9 @@ const Header = ({ siteTitle }) => {
               <NavLink href="/about/">About</NavLink>
             </NavItem>
             <NavItem>
+              <NavLink href="/donors/">Donors</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink href="/team/">Team</NavLink>
             </NavItem>
           </Nav>

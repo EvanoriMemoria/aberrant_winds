@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const AboutPage = () => (
+const RulesPage = () => (
   <Layout pageTitle="Community Rules">
     <SEO title="Community Rules" />
     <p>
@@ -33,4 +33,4 @@ const AboutPage = () => (
   </Layout>
 )
 
-export default AboutPage
+export default RulesPage
