@@ -1,64 +1,40 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  Card,
+  CardTitle,
+  CardBody,
+  Form,
+} from "reactstrap"
 
 const Footer = () => (
   <div className="site-footer">
-    <h4 className="text-center">Aberrant Winds</h4>
-    <p className="text-center">Follow us on social media</p>
-    <div className="footer-social-links">
-      <ul className="social-links-list">
-        <li>
-          <a
-            href="https://www.facebook.com"
+    <Card>
+      <CardBody>
+        <CardTitle>
+        <a
+            href="https://discord.gg/8jBA5dafAG"
             target="_blank"
             rel="noopener noreferrer"
-            className="facebook"
+            className="discord"
           >
-            <FontAwesomeIcon icon={["fab", "facebook"]} size="2x" />
+            <FontAwesomeIcon icon={["fab", "discord"]} size="2x" /> <br/>
           </a>
-        </li>
-        <li>
-          <a
-            href="https://www.twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="twitter"
-          >
-            <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="instagram"
-          >
-            <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.discord.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="google"
-          >
-            <FontAwesomeIcon icon={["fab", "discord"]} size="2x" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="linkedin"
-          >
-            <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" />
-          </a>
-        </li>
-      </ul>
-    </div>
+        </CardTitle>
+        <Form className="text-center">
+          <button className="btn btn-outline-success text-uppercase">
+            <a
+              href="https://discord.gg/8jBA5dafAG"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              Join the Discord!{" "}
+            </a>
+          </button>
+        </Form>
+      </CardBody>
+    </Card>
   </div>
 )
 

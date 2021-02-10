@@ -4,6 +4,13 @@
   padding: 10px;
   text-align: center;
 
+  .discord {
+    color: #000000;
+    &:hover {
+      color: rgb(73, 14, 107);
+    }
+  }
+
   .footer-social-links {
     text-align: center;
 
@@ -24,8 +31,8 @@
           &.twitter:hover {
             color: rgb(56, 161, 243);
           }
-          &.google:hover {
-            color: rgb(221, 75, 57);
+          &.discord:hover {
+            color: rgb(73, 14, 107);
           }
           &.linkedin:hover {
             color: rgb(0, 119, 181);

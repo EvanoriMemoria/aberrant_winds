@@ -1,15 +1,9 @@
 import React from "react"
-import {
-  Card,
-  CardTitle,
-  CardBody,
-  CardText,
-  Form,
-} from "reactstrap"
+import { Card, CardTitle, CardBody, CardText, Form } from "reactstrap"
 import { graphql, Link, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import Helmet from 'react-helmet'
+import Helmet from "react-helmet"
 
 const Sidebar = ({ author, authorFluid }) => (
   <div>
@@ -74,7 +68,14 @@ const Sidebar = ({ author, authorFluid }) => (
     <Card>
       <CardBody>
         <CardTitle className="text-center text-uppercase mb-3">
-          <FontAwesomeIcon icon={["fab", "discord"]} size="4x" />
+          <a
+            href="https://discord.gg/8jBA5dafAG"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="discord"
+          >
+            <FontAwesomeIcon icon={["fab", "discord"]} size="4x" /> <br />
+          </a>
         </CardTitle>
         <Form className="text-center">
           <button className="btn btn-outline-success text-uppercase">
@@ -120,7 +121,10 @@ const Sidebar = ({ author, authorFluid }) => (
                       </Link>
                     </CardTitle>
                     <CardText>
-                      <span data-playercounter-ip={node.frontmatter.address}>0</span> Players currently online.
+                      <span data-playercounter-ip={node.frontmatter.address}>
+                        0
+                      </span>{" "}
+                      Players currently online.
                     </CardText>
                   </CardBody>
                 </Card>
