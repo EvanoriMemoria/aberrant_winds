@@ -94,7 +94,7 @@ const Sidebar = ({ author, authorFluid }) => (
     <Card>
       <CardBody>
         <CardTitle className="text-center text-uppercase">
-          Advertisement
+          Cool Projects Showcase
         </CardTitle>
         <img
           src="https://via.placeholder.com/320x200"
