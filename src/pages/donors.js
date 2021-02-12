@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import donators from "../util/donators"
-import { Card, CardBody, CardTitle, Row } from "reactstrap"
+import { Card, CardBody, CardTitle } from "reactstrap"
 
 const DonorPage = () => {
   console.log(donators[0])
