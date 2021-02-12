@@ -121,7 +121,7 @@ const Sidebar = ({ author, authorFluid }) => (
                       </Link>
                     </CardTitle>
                     <CardText>
-                      <span data-playercounter-ip={node.frontmatter.address}>
+                      <span data-playercounter-ip={node.frontmatter.lookupAddress}>
                         0
                       </span>{" "}
                       Players currently online.
@@ -149,6 +149,7 @@ const sidebarQuery = graphql`
           frontmatter {
             title
             address
+            lookupAddress
             image {
               childImageSharp {
                 fluid(maxWidth: 300) {

@@ -3,7 +3,8 @@ title: 'Rebirth of the Night Beta Branch'
 date: 2021-12-1 14:00:00
 author: 'fergenbergel'
 image: '../../images/rotn-banner.png'
-address: 'rev.bendy.cool'
+address: 'rotnbeta.aberrantwinds.xyz'
+lookupAddress: 'rotnbeta.aberrantwinds.xyz:25568'
 tags: 
  - ROTN
  - Modded
