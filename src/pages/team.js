@@ -11,7 +11,7 @@ import {
   CardTitle,
   Row,
 } from "reactstrap"
-import JohnImage from "../images/john.jpg"
+import fergenImage from "../images/fergen.jpg"
 import { slugify } from "../util/utilityFunctions"
 
 const TeamPage = () => (
@@ -19,7 +19,7 @@ const TeamPage = () => (
     <SEO title="Our Team" />
     <Row className="mb-4">
       <div className="col-md-3">
-        <img src={JohnImage} style={{ maxWidth: "100%" }} alt="fergen profile" />
+        <img src={fergenImage} style={{ maxWidth: "100%" }} alt="fergen profile" />
       </div>
       <div className="col-md-8">
         <Card style={{ minHeight: "100%" }}>

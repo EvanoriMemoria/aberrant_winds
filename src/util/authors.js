@@ -23,7 +23,7 @@ const authors = [
   },
   {
     name: "fergenbergel",
-    imageUrl: "jane.jpg",
+    imageUrl: "fergen.jpg",
     bio:
       "He likes to go for hikes in the mountains, play co-op games with friends, and host modded minecraft servers.",
   },
