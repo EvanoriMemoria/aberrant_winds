@@ -4,7 +4,7 @@ import Post from "../components/Post"
 import { graphql } from "gatsby"
 import authors from "../util/authors"
 
-// Page which displays posts by {author}
+// Page which displays posts by author
 const authorPosts = ({ data, pageContext }) => {
   const { totalCount } = data.allMarkdownRemark
   const author = authors.find(x => x.name === pageContext.authorName)
