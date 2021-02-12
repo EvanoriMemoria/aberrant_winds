@@ -24,12 +24,12 @@ const TeamPage = () => (
       <div className="col-md-8">
         <Card style={{ minHeight: "100%" }}>
           <CardBody>
-            <CardTitle>{authors[2].name}</CardTitle>
-            <CardText>{authors[2].bio}</CardText>
+            <CardTitle>{authors[0].name}</CardTitle>
+            <CardText>{authors[0].bio}</CardText>
             <Button
               className="text-uppercase"
               color="primary"
-              href={`/author/${slugify(authors[2].name)}`}
+              href={`/author/${slugify(authors[0].name)}`}
             >
               View Hosted Servers
             </Button>
