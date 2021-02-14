@@ -106,7 +106,8 @@ const Sidebar = ({ author, authorFluid }) => (
     <Card>
       <CardBody>
         <CardTitle className="text-center text-uppercase mb-3">
-          Players Online
+          Players Online<br/>
+          These rarely update.
         </CardTitle>
         <StaticQuery
           query={sidebarQuery}
