@@ -4,6 +4,7 @@ import { graphql, Link, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Helmet from "react-helmet"
+import bedtime from "../images/bedtime.jpeg"
 
 const Sidebar = ({ author, authorFluid }) => (
   <div>
@@ -94,21 +95,33 @@ const Sidebar = ({ author, authorFluid }) => (
     <Card>
       <CardBody>
         <CardTitle className="text-center text-uppercase">
-          Cool Projects Showcase
+          Check Out These Cool Projects!
         </CardTitle>
-        <img
-          src="https://via.placeholder.com/320x200"
-          alt="Advert"
-          style={{ width: "100%" }}
-        />
+        <CardTitle className="text-center">
+          <a
+            href="https://www.beansproutillustrations.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Bean Sprout Illustrations
+          </a>
+        </CardTitle>
+        <a
+          href="https://www.beansproutillustrations.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={bedtime} alt="Advert" style={{ width: "100%" }} />
+        </a>
       </CardBody>
     </Card>
     <Card>
       <CardBody>
         <CardTitle className="text-center text-uppercase mb-3">
-          Players Online<br/>
-          These rarely update.
+          Players Online
+          <br />
         </CardTitle>
+        <CardTitle className="text-center mb-3">These rarely update.</CardTitle>
         <StaticQuery
           query={sidebarQuery}
           render={data => (
@@ -122,7 +135,9 @@ const Sidebar = ({ author, authorFluid }) => (
                       </Link>
                     </CardTitle>
                     <CardText>
-                      <span data-playercounter-ip={node.frontmatter.lookupAddress}>
+                      <span
+                        data-playercounter-ip={node.frontmatter.lookupAddress}
+                      >
                         0
                       </span>{" "}
                       Players currently online.
