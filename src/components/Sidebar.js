@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Helmet from "react-helmet"
 import bedtime from "../images/bedtime.jpeg"
+import puppy from "../images/puppy.jpg"
 
 const Sidebar = ({ author, authorFluid }) => (
   <div>
@@ -111,7 +112,24 @@ const Sidebar = ({ author, authorFluid }) => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={bedtime} alt="Advert" style={{ width: "100%" }} />
+          <img src={bedtime} alt="BeanSproutIllustrations" style={{ width: "100%" }} />
+        </a>
+        <CardTitle className="text-center">
+          <br/>
+          <a
+            href="https://www.instagram.com/alex.rust.art/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Alex's Realism Art
+          </a>
+        </CardTitle>
+        <a
+          href="https://www.instagram.com/alex.rust.art/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={puppy} alt="Alex's Instagram" style={{ width: "100%" }} />
         </a>
       </CardBody>
     </Card>
@@ -119,7 +137,6 @@ const Sidebar = ({ author, authorFluid }) => (
       <CardBody>
         <CardTitle className="text-center text-uppercase mb-3">
           Players Online
-          <br />
         </CardTitle>
         <CardTitle className="text-center mb-3">These rarely update.</CardTitle>
         <StaticQuery
