@@ -12,7 +12,8 @@ const SinglePost = ({ data, pageContext }) => {
   const post = data.markdownRemark.frontmatter
   const author = authors.find(x => x.name === post.author)
 
-  const baseUrl = "https://gatsbytutorial.co.uk"
+  const baseUrl = "https://aberrantwinds.xyz"
+  const message = "Come check out this modded Minecraft server by Aberrant Winds!%0A"
 
   return (
     <Layout
@@ -50,7 +51,8 @@ const SinglePost = ({ data, pageContext }) => {
             <a
               href={
                 "https://www.facebook.com/sharer/sharer.php?u=" +
-                baseUrl +
+                message +
+                baseUrl + "/" + 
                 pageContext.slug
               }
               className="facebook"
@@ -64,10 +66,9 @@ const SinglePost = ({ data, pageContext }) => {
             <a
               href={
                 "https://twitter.com/share?url=" +
-                baseUrl +
+                message +
+                baseUrl + "/" +
                 pageContext.slug +
-                "&text=" +
-                post.title +
                 "&via" +
                 "twitterHandle"
               }
@@ -82,7 +83,8 @@ const SinglePost = ({ data, pageContext }) => {
             <a
               href={
                 "https://www.linkedin.com/shareArticle?url=" +
-                baseUrl +
+                message +
+                baseUrl + "/" +
                 pageContext.slug
               }
               className="linkedin"
