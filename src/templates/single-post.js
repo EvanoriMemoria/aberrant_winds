@@ -41,17 +41,15 @@ const SinglePost = ({ data, pageContext }) => {
           </CardSubtitle>
           <CardText></CardText>
           <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-          <a href={post.modsDownload} target="_blank" rel="noopener noreferrer">
-            <Button
-              className="text-uppercase float-right"
-              color="primary"
-              href={post.modsDownload}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Download
-            </Button>
-          </a>
+          <Button
+            className="text-uppercase float-right"
+            color="primary"
+            href={post.modsDownload}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download
+          </Button>
           <ul className="post-tags">
             {post.tags.map(tag => (
               <li key={tag}>
