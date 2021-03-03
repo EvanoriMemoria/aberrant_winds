@@ -5,6 +5,7 @@ author: 'fergenbergel'
 image: '../../images/rotn-logo.png'
 address: 'rotn.aberrantwinds.xyz'
 lookupAddress: 'rotn.aberrantwinds.xyz:25570'
+modsDownload: 'https://www.curseforge.com/minecraft/modpacks/rebirth-of-the-night'
 tags:
  - ROTN
  - Modded

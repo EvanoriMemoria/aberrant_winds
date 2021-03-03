@@ -1,5 +1,5 @@
 import React from "react"
-import { Card, CardTitle, CardBody, CardText, Form } from "reactstrap"
+import { Card, CardTitle, CardBody, CardText, Form, Button } from "reactstrap"
 import { graphql, Link, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -79,8 +79,8 @@ const Sidebar = ({ author, authorFluid }) => (
             <FontAwesomeIcon icon={["fab", "discord"]} size="4x" /> <br />
           </a>
         </CardTitle>
-        <Form className="text-center">
-          <button className="btn btn-outline-success text-uppercase">
+        <div className="text-center">
+          <button className="btn btn-outline-success text-uppercase join-discord">
             <a
               href="https://discord.gg/8jBA5dafAG"
               target="_blank"
@@ -90,7 +90,7 @@ const Sidebar = ({ author, authorFluid }) => (
               Join the Discord!{" "}
             </a>
           </button>
-        </Form>
+        </div>
       </CardBody>
     </Card>
     <Card>

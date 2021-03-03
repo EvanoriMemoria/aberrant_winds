@@ -22,7 +22,7 @@ const Footer = () => (
           </a>
         </CardTitle>
         <Form className="text-center">
-          <button className="btn btn-outline-success text-uppercase">
+          <button className="btn btn-outline-success text-uppercase join-discord">
             <a
               href="https://discord.gg/8jBA5dafAG"
               target="_blank"

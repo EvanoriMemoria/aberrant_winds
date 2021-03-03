@@ -2,7 +2,14 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql, Link } from "gatsby"
 import SEO from "../components/seo"
-import { Badge, Card, CardBody, CardSubtitle, CardText } from "reactstrap"
+import {
+  Badge,
+  Card,
+  CardBody,
+  CardSubtitle,
+  CardText,
+  Button,
+} from "reactstrap"
 import Img from "gatsby-image"
 import { slugify } from "../util/utilityFunctions"
 import authors from "../util/authors"
@@ -13,7 +20,8 @@ const SinglePost = ({ data, pageContext }) => {
   const author = authors.find(x => x.name === post.author)
 
   const baseUrl = "https://aberrantwinds.xyz"
-  const message = "Come check out this modded Minecraft server by Aberrant Winds!%0A"
+  const message =
+    "Come check out this modded Minecraft server by Aberrant Winds!%0A"
 
   return (
     <Layout
@@ -29,10 +37,19 @@ const SinglePost = ({ data, pageContext }) => {
         />
         <CardBody>
           <CardSubtitle>
-             Ip Address:{' '} <span className="text-info">{post.address}</span>
+            Ip Address: <span className="text-info">{post.address}</span>
           </CardSubtitle>
           <CardText></CardText>
           <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+          <Button
+            className="text-uppercase float-right"
+            color="primary"
+            href={post.modsDownload}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download
+          </Button>
           <ul className="post-tags">
             {post.tags.map(tag => (
               <li key={tag}>
@@ -52,7 +69,8 @@ const SinglePost = ({ data, pageContext }) => {
               href={
                 "https://www.facebook.com/sharer/sharer.php?u=" +
                 message +
-                baseUrl + "/" + 
+                baseUrl +
+                "/" +
                 pageContext.slug
               }
               className="facebook"
@@ -67,7 +85,8 @@ const SinglePost = ({ data, pageContext }) => {
               href={
                 "https://twitter.com/share?url=" +
                 message +
-                baseUrl + "/" +
+                baseUrl +
+                "/" +
                 pageContext.slug +
                 "&via" +
                 "twitterHandle"
@@ -84,7 +103,8 @@ const SinglePost = ({ data, pageContext }) => {
               href={
                 "https://www.linkedin.com/shareArticle?url=" +
                 message +
-                baseUrl + "/" +
+                baseUrl +
+                "/" +
                 pageContext.slug
               }
               className="linkedin"
@@ -111,6 +131,7 @@ export const postQuery = graphql`
         date(formatString: "MMM Do YYYY")
         tags
         address
+        modsDownload
         image {
           childImageSharp {
             fluid(maxWidth: 700) {
