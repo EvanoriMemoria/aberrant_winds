@@ -12,9 +12,10 @@ const RulesPage = () => (
         <p>
           I appreciate that you've taken the time to come read the rules.
           They're not anything out of the ordinary but I do expect that all
-          players follow them. Basically they cover using common human courtesy,
+          players follow them. Ignorance is not a valid excuse to not follow the rules.
+          Basically they cover using common human courtesy,
           sure you're anonymous, but I have no misgivings banning people who are
-          being disruptive or inappropriate let alone anything worse. In no
+          being disruptive or inappropri  ate let alone anything worse. In no
           vague terms this means:
         </p>
         <ol>
@@ -29,6 +30,12 @@ const RulesPage = () => (
             human courtesy.
           </li>
         </ol>
+
+        <h2>Report another Player</h2>
+        If you have a grievance with another player please send me a private message 
+        through discord (fergenbergel#2539) and try your best not to escalate the situation. 
+        The message should include your minecraft username, their minecraft username, 
+        the grievance, and the time or estimated time it occured.
       </CardBody>
     </Card>
   </Layout>

@@ -14,7 +14,7 @@ import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons"
 
 library.add(fab, faCheckSquare, faCoffee)
 
-const Layout = ({ authorImageFluid, children, pageTitle, postAuthor }) => {
+const Layout = ({ authorImageFluid, children, pageTitle, postAuthor, pageId }) => {
   //props.pageTitle
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -34,7 +34,7 @@ const Layout = ({ authorImageFluid, children, pageTitle, postAuthor }) => {
         <Row>
           <Col md="8">{children}</Col>
           <Col md="4">
-            <Sidebar author={postAuthor} authorFluid={authorImageFluid} />
+            <Sidebar author={postAuthor} authorFluid={authorImageFluid} pageId={pageId} />
           </Col>
         </Row>
         <Footer />

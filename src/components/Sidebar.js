@@ -1,5 +1,5 @@
 import React from "react"
-import { Card, CardTitle, CardBody, CardText, Form, Button } from "reactstrap"
+import { Card, CardTitle, CardBody, CardText } from "reactstrap"
 import { graphql, Link, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -7,7 +7,7 @@ import Helmet from "react-helmet"
 import bedtime from "../images/bedtime.jpeg"
 import puppy from "../images/puppy.jpg"
 
-const Sidebar = ({ author, authorFluid }) => (
+const Sidebar = ({ author, authorFluid, pageId }) => (
   <div>
     <Helmet>
       <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
@@ -112,10 +112,14 @@ const Sidebar = ({ author, authorFluid }) => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={bedtime} alt="BeanSproutIllustrations" style={{ width: "100%" }} />
+          <img
+            src={bedtime}
+            alt="BeanSproutIllustrations"
+            style={{ width: "100%" }}
+          />
         </a>
         <CardTitle className="text-center">
-          <br/>
+          <br />
           <a
             href="https://www.instagram.com/alex.rust.art/"
             target="_blank"
@@ -133,40 +137,45 @@ const Sidebar = ({ author, authorFluid }) => (
         </a>
       </CardBody>
     </Card>
-    <Card>
-      <CardBody>
-        <CardTitle className="text-center text-uppercase mb-3">
-          Players Online
-        </CardTitle>
-        <CardTitle className="text-center mb-3">These rarely update.</CardTitle>
-        <StaticQuery
-          query={sidebarQuery}
-          render={data => (
-            <div>
-              {data.allMarkdownRemark.edges.map(({ node }) => (
-                <Card key={node.id}>
-                  <CardBody>
-                    <CardTitle>
-                      <Link to={node.fields.slug}>
-                        {node.frontmatter.title}
-                      </Link>
-                    </CardTitle>
-                    <CardText>
-                      <span
-                        data-playercounter-ip={node.frontmatter.lookupAddress}
-                      >
-                        0
-                      </span>{" "}
-                      Players currently online.
-                    </CardText>
-                  </CardBody>
-                </Card>
-              ))}
-            </div>
-          )}
-        />
-      </CardBody>
-    </Card>
+    {/* Only shows the player count on the home page. */}
+    {pageId === "index" && (
+      <Card>
+        <CardBody>
+          <CardTitle className="text-center text-uppercase mb-3">
+            Players Online
+          </CardTitle>
+          <CardTitle className="text-center mb-3">
+            These rarely update.
+          </CardTitle>
+          <StaticQuery
+            query={sidebarQuery}
+            render={data => (
+              <div>
+                {data.allMarkdownRemark.edges.map(({ node }) => (
+                  <Card key={node.id}>
+                    <CardBody>
+                      <CardTitle>
+                        <Link to={node.fields.slug}>
+                          {node.frontmatter.title}
+                        </Link>
+                      </CardTitle>
+                      <CardText>
+                        <span
+                          data-playercounter-ip={node.frontmatter.lookupAddress}
+                        >
+                          0
+                        </span>{" "}
+                        Players currently online.
+                      </CardText>
+                    </CardBody>
+                  </Card>
+                ))}
+              </div>
+            )}
+          />
+        </CardBody>
+      </Card>
+    )}
   </div>
 )
 

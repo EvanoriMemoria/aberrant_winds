@@ -8,7 +8,7 @@ import { Card, CardBody, CardTitle } from "reactstrap"
 const DonorPage = () => {
   console.log(donators[0])
   return (
-    <Layout pageTitle="Thanks to all our awesome donors!">
+    <Layout pageTitle="Thanks to all our awesome donors!" pageId="donors">
       <SEO title="Thanks to all our awesome donors!" />
       <ul>
         {donators.map(donators => (

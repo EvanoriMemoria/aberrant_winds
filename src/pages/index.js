@@ -10,7 +10,7 @@ const IndexPage = () => {
   let numberOfPages
 
   return (
-    <Layout pageTitle="Welcome to Aberrant Winds!">
+    <Layout pageTitle="Welcome to Aberrant Winds!" pageId="index">
       <SEO title="Home" />
       <StaticQuery
         query={indexQuery}

@@ -15,7 +15,13 @@ const AboutPage = () => (
         </p>
         <h2>Values</h2>
         Aberrant Winds was created to be a fun and welcoming place for all
-        individuals.
+        individuals. I cannot accomplish this alone so I humbly ask for your assistance by being a positive influence to all in the community.
+        On that note: if you have a grievance with another player please send me a private message through discord (fergenbergel#2539) and try your best not to escalate the situation.
+        <h2>Ads</h2>
+        You may have noticed there are ad-like images in the sidebar on the right. 
+        These are my effort to support small business artists who are just starting out. 
+        I do not get any revenue from these but believe they are worth checking out and are positive artistically inclined people. 
+        I have gained permission from each of the authors to use the images and have links from this website.
         <h2>Hardware</h2>
         <p>
           <b>OS:</b> Debian <br />
