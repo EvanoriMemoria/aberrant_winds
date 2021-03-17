@@ -15,7 +15,7 @@ const RulesPage = () => (
           players follow them. Ignorance is not a valid excuse to not follow the rules.
           Basically they cover using common human courtesy,
           sure you're anonymous, but I have no misgivings banning people who are
-          being disruptive or inappropri  ate let alone anything worse. In no
+          being disruptive or inappropriate let alone anything worse. In no
           vague terms this means:
         </p>
         <ol>
