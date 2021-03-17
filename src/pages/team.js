@@ -27,8 +27,8 @@ const TeamPage = () => (
             <CardTitle>{authors[0].name}</CardTitle>
             <CardText>{authors[0].bio}</CardText>
             <Button
-              className="text-uppercase"
-              color="primary"
+              className="btn btn-outline-light"
+              color="$navbar-text"
               href={`/author/${slugify(authors[0].name)}`}
             >
               View Hosted Servers

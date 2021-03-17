@@ -39,7 +39,7 @@ const Post = ({ title, author, slug, body, fluid, tags }) => {
         </ul>
         <Link
           to={`/${slug}`}
-          className="btn btn-outline-primary float-right text-uppercase"
+          className="btn btn-outline-light float-right text-uppercase"
         >
           Read more
         </Link>

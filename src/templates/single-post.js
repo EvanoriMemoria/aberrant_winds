@@ -42,8 +42,8 @@ const SinglePost = ({ data, pageContext }) => {
           <CardText></CardText>
           <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
           <Button
-            className="text-uppercase float-right"
-            color="primary"
+            className="btn btn-outline-light float-right text-uppercase"
+            color="$navbar-text"
             href={post.modsDownload}
             target="_blank"
             rel="noopener noreferrer"

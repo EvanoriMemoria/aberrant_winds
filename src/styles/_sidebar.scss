@@ -1,7 +1,7 @@
 .discord {
-  color: #000000;
+  color: $navbar-text;
   &:hover {
-    color: rgb(73, 14, 107);
+    color: $link-color;
   }
 }
 

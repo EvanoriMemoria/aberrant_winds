@@ -1,13 +1,13 @@
 .site-footer {
-  background-color: $white;
+  background-color: $navbar-dark;
   margin-top: 20px;
   padding: 10px;
   text-align: center;
 
   .discord {
-    color: #000000;
+    color: $navbar-text;
     &:hover {
-      color: rgb(73, 14, 107);
+      color: $link-color;
     }
   }
 

@@ -13,7 +13,7 @@ const Sidebar = ({ author, authorFluid, pageId }) => (
       <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
     </Helmet>
     {author && (
-      <Card>
+      <Card dark>
         <Img className="card-image-top" fluid={authorFluid} />
         <CardBody>
           <CardTitle className="text-center text-uppercase mb-3">
@@ -80,7 +80,7 @@ const Sidebar = ({ author, authorFluid, pageId }) => (
           </a>
         </CardTitle>
         <div className="text-center">
-          <button className="btn btn-outline-success text-uppercase join-discord">
+          <button className="btn text-uppercase join-discord">
             <a
               href="https://discord.gg/8jBA5dafAG"
               target="_blank"
@@ -152,7 +152,7 @@ const Sidebar = ({ author, authorFluid, pageId }) => (
             render={data => (
               <div>
                 {data.allMarkdownRemark.edges.map(({ node }) => (
-                  <Card key={node.id}>
+                  <Card className="" key={node.id}>
                     <CardBody>
                       <CardTitle>
                         <Link to={node.fields.slug}>
