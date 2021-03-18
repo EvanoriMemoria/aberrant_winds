@@ -23,7 +23,7 @@ const Post = ({ title, author, slug, body, fluid, tags }) => {
         </CardTitle>
         <CardSubtitle>
           Hosted by{" "}
-          <span className="text-info">{author}</span>
+          <span>{author}</span>
         </CardSubtitle>
         <CardText>{body}</CardText>
         <ul className="post-tags">

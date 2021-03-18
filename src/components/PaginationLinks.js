@@ -14,7 +14,7 @@ const PaginationLinks = ({ currentPage, numberOfPages }) => {
           <PaginationLink previous href="/"></PaginationLink>
         </PaginationItem>
       ) : (
-        <PaginationItem>
+        <PaginationItem >
           <PaginationLink previous href={previousPage} />
         </PaginationItem>
       )}
