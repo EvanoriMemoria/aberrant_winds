@@ -1,17 +1,17 @@
 import React from "react"
 import Layout from "../components/layout"
-import Post from "../components/Post"
+import Server from "../components/Server"
 import { graphql } from "gatsby"
 import PaginationLinks from '../components/PaginationLinks'
 
-const postList = (props) => {
+const serverList = (props) => {
   const posts = props.data.allMarkdownRemark.edges
   const { currentPage, numberOfPages } = props.pageContext
 
   return (
     <Layout pageTitle={`Page: ${currentPage}`}>
       {posts.map(({ node }) => (
-        <Post
+        <Server
           key={node.id}
           slug={node.fields.slug}
           title={node.frontmatter.title}
@@ -60,4 +60,4 @@ export const postListQuery = graphql`
   }
 `
 
-export default postList
+export default serverList

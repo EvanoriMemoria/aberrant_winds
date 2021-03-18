@@ -1,7 +1,8 @@
 ---
-title: 'Rebirth of the Night Beta Branch'
+title: 'Test Post 1'
 date: 2021-12-1 14:00:00
 author: 'fergenbergel'
+type: 'post'
 image: '../../images/rotn-banner.png'
 address: 'rotnbeta.aberrantwinds.xyz'
 lookupAddress: 'rotnbeta.aberrantwinds.xyz:25568'

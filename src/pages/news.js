@@ -2,11 +2,10 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql, StaticQuery } from "gatsby"
-import Server from "../components/Server"
+import Post from "../components/Post"
 import PaginationLinks from "../components/PaginationLinks"
-import { Row, Col } from "reactstrap"
 
-const IndexPage = () => {
+const newsPage = () => {
   const postsPerPage = 10
   let numberOfPages
 
@@ -19,24 +18,21 @@ const IndexPage = () => {
           numberOfPages = Math.ceil(
             data.allMarkdownRemark.totalCount / postsPerPage
           )
+          console.log(data.allMarkdownRemark.totalCount)
           return (
             <div>
-              <Row>
-                {data.allMarkdownRemark.edges.map(({ node }) => (
-                  <Col md="6">
-                    <Server
-                      key={node.id}
-                      title={node.frontmatter.title}
-                      author={node.frontmatter.author}
-                      slug={node.fields.slug}
-                      date={node.frontmatter.date}
-                      body={node.excerpt}
-                      fluid={node.frontmatter.image.childImageSharp.fluid}
-                      tags={node.frontmatter.tags}
-                    />
-                  </Col>
-                ))}
-              </Row>
+              {data.allMarkdownRemark.edges.map(({ node }) => (
+                <Post
+                  key={node.id}
+                  title={node.frontmatter.title}
+                  author={node.frontmatter.author}
+                  slug={node.fields.slug}
+                  date={node.frontmatter.date}
+                  body={node.excerpt}
+                  tags={node.frontmatter.tags}
+                />
+              ))}
+              <PaginationLinks currentPage={1} numberOfPages={numberOfPages} />
             </div>
           )
         }}
@@ -44,13 +40,13 @@ const IndexPage = () => {
     </Layout>
   )
 }
-//<PaginationLinks currentPage={1} numberOfPages={numberOfPages} />
+
 const indexQuery = graphql`
   query {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 10
-      filter: { frontmatter: { type: { eq: "server" } } }
+      filter: { frontmatter: { type: { eq: "post" } } }
     ) {
       totalCount
       edges {
@@ -62,13 +58,6 @@ const indexQuery = graphql`
             author
             type
             tags
-            image {
-              childImageSharp {
-                fluid(maxWidth: 600) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
           }
           fields {
             slug
@@ -80,4 +69,4 @@ const indexQuery = graphql`
   }
 `
 
-export default IndexPage
+export default newsPage

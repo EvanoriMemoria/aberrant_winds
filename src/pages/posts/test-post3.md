@@ -1,7 +1,8 @@
 ---
-title: 'Rebirth of the Night'
+title: 'Test Post 3'
 date: 2021-12-02 14:00:00
 author: 'fergenbergel'
+type: 'post'
 image: '../../images/rotn-logo.png'
 address: 'rotn.aberrantwinds.xyz'
 lookupAddress: 'rotn.aberrantwinds.xyz:25570'

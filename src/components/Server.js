@@ -11,7 +11,7 @@ import {
 import Img from "gatsby-image"
 import { slugify } from "../util/utilityFunctions"
 
-const Post = ({ title, author, slug, body, fluid, tags }) => {
+const Server = ({ title, author, slug, body, fluid, tags }) => {
   return (
     <Card className="server-list">
       <Link to={`/${slug}`}>
@@ -22,7 +22,7 @@ const Post = ({ title, author, slug, body, fluid, tags }) => {
           <Link to={`/${slug}`}>{title}</Link>
         </CardTitle>
         <CardSubtitle>
-          Posted by <span>{author}</span>
+          Hosted by <span>{author}</span>
         </CardSubtitle>
         <CardText>{body}</CardText>
         <ul className="server-tags">
@@ -40,11 +40,11 @@ const Post = ({ title, author, slug, body, fluid, tags }) => {
           to={`/${slug}`}
           className="btn btn-outline-light float-right text-uppercase"
         >
-          Read more
+          More Info
         </Link>
       </CardBody>
     </Card>
   )
 }
 
-export default Post
+export default Server
