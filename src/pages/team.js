@@ -11,7 +11,7 @@ import {
   CardTitle,
   Row,
 } from "reactstrap"
-import fergenImage from "../images/fergen.jpg"
+import fergenImage from "../images/aberrant_winds.png"
 import { slugify } from "../util/utilityFunctions"
 
 const TeamPage = () => (
