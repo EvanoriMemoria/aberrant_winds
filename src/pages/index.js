@@ -6,18 +6,12 @@ import Server from "../components/Server"
 import { Row, Col } from "reactstrap"
 
 const IndexPage = () => {
-  const postsPerPage = 10
-  let numberOfPages
-
   return (
     <Layout pageTitle="Welcome to Aberrant Winds!" pageId="index">
       <SEO title="Home" />
       <StaticQuery
         query={indexQuery}
         render={data => {
-          numberOfPages = Math.ceil(
-            data.allMarkdownRemark.totalCount / postsPerPage
-          )
           return (
             <div>
               <Row>

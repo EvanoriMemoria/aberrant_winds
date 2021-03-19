@@ -11,7 +11,7 @@ const newsPage = () => {
 
   return (
     <Layout pageTitle="News" pageId="news">
-      <SEO title="news" />
+      <SEO title="Aberrant Winds News" />
       <StaticQuery
         query={indexQuery}
         render={data => {

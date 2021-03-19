@@ -8,8 +8,6 @@ import {
   CardBody,
   CardSubtitle,
   CardText,
-  Button,
-  CardTitle,
 } from "reactstrap"
 import { slugify } from "../util/utilityFunctions"
 import authors from "../util/authors"

@@ -5,11 +5,9 @@ import {
   Card,
   CardTitle,
   CardText,
-  CardSubtitle,
   CardBody,
 } from "reactstrap"
 import Img from "gatsby-image"
-import { slugify } from "../util/utilityFunctions"
 
 const Server = ({ title, slug, body, status, fluid }) => {
   return (

@@ -1,19 +1,18 @@
 import React from "react"
 import { Card, CardTitle, CardBody, CardText } from "reactstrap"
-import { graphql, Link, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Helmet from "react-helmet"
 import bedtime from "../images/bedtime.jpeg"
 import puppy from "../images/puppy.jpg"
 
-const Sidebar = ({ author, authorFluid, pageId }) => (
+const Sidebar = ({ author, authorFluid }) => (
   <div>
     <Helmet>
       <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
     </Helmet>
     {author && (
-      <Card dark>
+      <Card>
         <Img className="card-image-top" fluid={authorFluid} />
         <CardBody>
           <CardTitle className="text-center text-uppercase mb-3">
@@ -149,34 +148,5 @@ const Sidebar = ({ author, authorFluid, pageId }) => (
     )*/}
   </div>
 )
-
-const sidebarQuery = graphql`
-  query sidebarQuery {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: 3
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            address
-            image {
-              childImageSharp {
-                fluid(maxWidth: 300) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          fields {
-            slug
-          }
-        }
-      }
-    }
-  }
-`
 
 export default Sidebar
