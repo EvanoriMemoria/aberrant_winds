@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql, StaticQuery } from "gatsby"
 import Server from "../components/Server"
-import PaginationLinks from "../components/PaginationLinks"
 import { Row, Col } from "reactstrap"
 
 const IndexPage = () => {
@@ -32,7 +31,7 @@ const IndexPage = () => {
                       date={node.frontmatter.date}
                       body={node.excerpt}
                       fluid={node.frontmatter.image.childImageSharp.fluid}
-                      tags={node.frontmatter.tags}
+                      status={node.frontmatter.status}
                     />
                   </Col>
                 ))}
@@ -44,11 +43,10 @@ const IndexPage = () => {
     </Layout>
   )
 }
-//<PaginationLinks currentPage={1} numberOfPages={numberOfPages} />
 const indexQuery = graphql`
   query {
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___status, frontmatter___title], order: [ASC, ASC] }
       limit: 10
       filter: { frontmatter: { type: { eq: "server" } } }
     ) {
@@ -61,6 +59,7 @@ const indexQuery = graphql`
             date(formatString: "MMM Do YYYY")
             author
             type
+            status
             tags
             image {
               childImageSharp {

@@ -9,9 +9,8 @@ import {
   CardSubtitle,
   CardText,
   Button,
-  CardTitle,
 } from "reactstrap"
-import { slugify } from "../util/utilityFunctions"
+import Img from "gatsby-image"
 import authors from "../util/authors"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
@@ -31,24 +30,29 @@ const SinglePost = ({ data, pageContext }) => {
     >
       <SEO title={post.title} />
       <Card>
+        <Img
+          className="card-image-top"
+          fluid={post.image.childImageSharp.fluid}
+        />
         <CardBody>
-          <CardTitle>
-            <h2 className="newsHeader">{post.title}</h2>
-          </CardTitle>
           <CardSubtitle>
-              Posted by <span className="text-highlight">{post.author}</span>
+            Ip Address: <span className="text-highlight">{post.address}</span>
+          </CardSubtitle><br/>
+          <CardSubtitle>
+            Publicity: <span className="text-highlight">{post.publicity}</span>
           </CardSubtitle>
           <CardText></CardText>
           <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-          <ul className="post-tags">
-            {post.tags.map(tag => (
-              <li key={tag}>
-                <Link to={`/tag/${slugify(tag)}`}>
-                  <Badge color="primary">{tag}</Badge>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <Button
+            className="btn btn-outline-light float-right text-uppercase"
+            color="$navbar-text"
+            href={post.modsDownload}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download
+          </Button>
+          <Badge className={post.status==="Active" ? "active-highlight" : "inactive-highlight"}>{post.status}</Badge>
         </CardBody>
       </Card>
       <h3 className="text-center">Share this Server</h3>
@@ -111,7 +115,7 @@ const SinglePost = ({ data, pageContext }) => {
 }
 
 export const postQuery = graphql`
-  query blogPostBySlug($slug: String!, $imageUrl: String!) {
+  query serverPostBySlug($slug: String!, $imageUrl: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
@@ -119,8 +123,9 @@ export const postQuery = graphql`
         title
         author
         date(formatString: "MMM Do YYYY")
-        tags
         address
+        status
+        publicity
         modsDownload
         image {
           childImageSharp {

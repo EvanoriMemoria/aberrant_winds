@@ -18,7 +18,7 @@ const serverList = (props) => {
           author={node.frontmatter.author}
           date={node.frontmatter.date}
           body={node.excerpt}
-          tags={node.frontmatter.tags}
+          status={node.frontmatter.status}
           fluid={node.frontmatter.image.childImageSharp.fluid}
         />
       ))}
@@ -27,8 +27,8 @@ const serverList = (props) => {
   )
 }
 
-export const postListQuery = graphql`
-  query postListQuery($skip: Int!, $limit: Int!) {
+export const serverListQuery = graphql`
+  query serverListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
@@ -41,7 +41,7 @@ export const postListQuery = graphql`
             title
             date(formatString: "MMM Do YYYY")
             author
-            tags
+            status
             image {
               childImageSharp {
                 fluid(maxWidth: 650, maxHeight: 371) {

@@ -13,6 +13,27 @@ a {
     text-decoration: none;
   }
 }
+.newsHeader{
+  text-align: left;
+}
+.text-highlight{
+  color: $button-light;
+}
+.active-highlight{
+  color: $navbar-text;
+  font-size: 1.1em;
+  background-color: green;
+}
+.inactive-highlight{
+  color: $navbar-text;
+  font-size: 1.1em;
+  background-color: #990b0b;
+}
+
+.post-date{
+  text-align: right;
+  float: right;
+}
 
 //discord buttons
 .join-discord{

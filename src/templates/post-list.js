@@ -1,18 +1,16 @@
 import React from "react"
-import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Post from "../components/Post"
+import { graphql } from "gatsby"
+import PaginationLinks from '../components/PaginationLinks'
 
-const tagPosts = ({ data, pageContext }) => {
-  const { tag } = pageContext
-  const { totalCount } = data.allMarkdownRemark
-  const pageHeader = `${totalCount} post${
-    totalCount === 1 ? "" : "s"
-  } tagged with "${tag}"`
+const postList = (props) => {
+  const posts = props.data.allMarkdownRemark.edges
+  const { currentPage, numberOfPages } = props.pageContext
 
   return (
-    <Layout pageTitle={pageHeader}>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
+    <Layout pageTitle={`Page: ${currentPage}`}>
+      {posts.map(({ node }) => (
         <Post
           key={node.id}
           slug={node.fields.slug}
@@ -20,20 +18,23 @@ const tagPosts = ({ data, pageContext }) => {
           author={node.frontmatter.author}
           date={node.frontmatter.date}
           body={node.excerpt}
+          status={node.frontmatter.status}
           tags={node.frontmatter.tags}
         />
       ))}
+      <PaginationLinks currentPage={currentPage} numberOfPages={numberOfPages}/>
     </Layout>
   )
 }
 
-export const tagQuery = graphql`
-  query($tag: String!){
+export const postListQuery = graphql`
+  query postListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      filter: { frontmatter: { type: { eq: "post" } } }
+      limit: $limit
+      skip: $skip
     ) {
-      totalCount
       edges {
         node {
           id
@@ -41,6 +42,7 @@ export const tagQuery = graphql`
             title
             date(formatString: "MMM Do YYYY")
             author
+            status
             tags
           }
           fields {
@@ -53,4 +55,4 @@ export const tagQuery = graphql`
   }
 `
 
-export default tagPosts
+export default postList

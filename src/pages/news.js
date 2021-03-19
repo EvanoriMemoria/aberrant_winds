@@ -6,19 +6,18 @@ import Post from "../components/Post"
 import PaginationLinks from "../components/PaginationLinks"
 
 const newsPage = () => {
-  const postsPerPage = 10
+  const postsPerPage = 4
   let numberOfPages
 
   return (
-    <Layout pageTitle="Welcome to Aberrant Winds!" pageId="index">
-      <SEO title="Home" />
+    <Layout pageTitle="News" pageId="news">
+      <SEO title="news" />
       <StaticQuery
         query={indexQuery}
         render={data => {
           numberOfPages = Math.ceil(
             data.allMarkdownRemark.totalCount / postsPerPage
           )
-          console.log(data.allMarkdownRemark.totalCount)
           return (
             <div>
               {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -45,8 +44,8 @@ const indexQuery = graphql`
   query {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 10
       filter: { frontmatter: { type: { eq: "post" } } }
+      limit: 4
     ) {
       totalCount
       edges {

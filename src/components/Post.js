@@ -8,24 +8,21 @@ import {
   CardSubtitle,
   CardBody,
 } from "reactstrap"
-import Img from "gatsby-image"
 import { slugify } from "../util/utilityFunctions"
 
-const Post = ({ title, author, slug, body, fluid, tags }) => {
+const Post = ({ title, author, slug, date, body, tags }) => {
   return (
     <Card className="server-list">
-      <Link to={`/${slug}`}>
-        <Img className="card-image-top" fluid={fluid} />
-      </Link>
       <CardBody>
+      <span className="post-date">{date}</span>
         <CardTitle>
-          <Link to={`/${slug}`}>{title}</Link>
+          <h2 className="newsHeader"><Link to={`/${slug}`}>{title}</Link></h2>
         </CardTitle>
         <CardSubtitle>
-          Posted by <span>{author}</span>
-        </CardSubtitle>
+              Posted by <span className="text-highlight">{author}</span>
+          </CardSubtitle>
         <CardText>{body}</CardText>
-        <ul className="server-tags">
+        <ul className="post-tags">
           {tags.map(tag => (
             <li key={tag}>
               <Link to={`/tag/${slugify(tag)}`}>

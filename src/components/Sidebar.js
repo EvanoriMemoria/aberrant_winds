@@ -138,44 +138,15 @@ const Sidebar = ({ author, authorFluid, pageId }) => (
       </CardBody>
     </Card>
     {/* Only shows the player count on the home page. */}
-    {pageId === "index" && (
+    {/*pageId === "index" && (
       <Card>
         <CardBody>
-          <CardTitle className="text-center text-uppercase mb-3">
-            Players Online
-          </CardTitle>
           <CardTitle className="text-center mb-3">
-            These rarely update.
+            Online Players will return when it works better
           </CardTitle>
-          <StaticQuery
-            query={sidebarQuery}
-            render={data => (
-              <div>
-                {data.allMarkdownRemark.edges.map(({ node }) => (
-                  <Card className="" key={node.id}>
-                    <CardBody>
-                      <CardTitle>
-                        <Link to={node.fields.slug}>
-                          {node.frontmatter.title}
-                        </Link>
-                      </CardTitle>
-                      <CardText>
-                        <span
-                          data-playercounter-ip={node.frontmatter.lookupAddress}
-                        >
-                          0
-                        </span>{" "}
-                        Players currently online.
-                      </CardText>
-                    </CardBody>
-                  </Card>
-                ))}
-              </div>
-            )}
-          />
         </CardBody>
       </Card>
-    )}
+    )*/}
   </div>
 )
 

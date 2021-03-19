@@ -8,7 +8,7 @@ import authors from "../util/authors"
 const authorPosts = ({ data, pageContext }) => {
   const { totalCount } = data.allMarkdownRemark
   const author = authors.find(x => x.name === pageContext.authorName)
-  const pageHeader = `${totalCount} Servers hosted by: ${pageContext.authorName}`
+  const pageHeader = `${totalCount} Posts/Servers by: ${pageContext.authorName}`
 
   return (
     <Layout
@@ -25,7 +25,6 @@ const authorPosts = ({ data, pageContext }) => {
           date={node.frontmatter.date}
           body={node.excerpt}
           tags={node.frontmatter.tags}
-          fluid={node.frontmatter.image.childImageSharp.fluid}
         />
       ))}
     </Layout>
@@ -47,13 +46,6 @@ export const authorQuery = graphql`
             date(formatString: "MMM Do YYYY")
             author
             tags
-            image {
-              childImageSharp {
-                fluid(maxWidth: 650) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
           }
           fields {
             slug

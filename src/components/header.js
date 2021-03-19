@@ -26,6 +26,9 @@ const Header = ({ siteTitle }) => {
               <NavLink href="/rules/">Rules</NavLink>
             </NavItem>
             <NavItem>
+              <NavLink href="/news/">News</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink href="/about/">About</NavLink>
             </NavItem>
             <NavItem>

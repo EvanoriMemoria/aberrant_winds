@@ -20,11 +20,12 @@ exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
   const templates = {
-    singlePost: path.resolve("src/templates/single-post.js"),
+    singleServer: path.resolve("src/templates/single-server.js"),
     tagsPage: path.resolve("src/templates/tags-page.js"),
     tagposts: path.resolve("src/templates/tag-posts.js"),
     postList: path.resolve("src/templates/post-list.js"),
     authorPosts: path.resolve("src/templates/author-posts.js"),
+    singlePost: path.resolve("src/templates/single-post.js"),
   }
 
   return graphql(`
@@ -35,6 +36,7 @@ exports.createPages = ({ actions, graphql }) => {
             frontmatter {
               author
               tags
+              type
             }
             fields {
               slug
@@ -47,19 +49,33 @@ exports.createPages = ({ actions, graphql }) => {
     if (res.errors) return Promise.reject(res.errors)
 
     const posts = res.data.allMarkdownRemark.edges
-
     posts.forEach(({ node }) => {
-      createPage({
-        path: node.fields.slug,
-        component: templates.singlePost,
-        context: {
-          // Passing slug for template to use to get post
-          slug: node.fields.slug,
-          // Find author imageUrl from authors and pass it to the single post template
-          imageUrl: authors.find(x => x.name === node.frontmatter.author)
-            .imageUrl,
-        },
-      })
+      if (node.frontmatter.type === "server") {
+        createPage({
+          path: node.fields.slug,
+          component: templates.singleServer,
+          context: {
+            // Passing slug for template to use to get post
+            slug: node.fields.slug,
+            // Find author imageUrl from authors and pass it to the single post template
+            imageUrl: authors.find(x => x.name === node.frontmatter.author)
+              .imageUrl,
+          },
+        })
+      }
+      if (node.frontmatter.type === "post") {
+        createPage({
+          path: node.fields.slug,
+          component: templates.singlePost,
+          context: {
+            // Passing slug for template to use to get post
+            slug: node.fields.slug,
+            // Find author imageUrl from authors and pass it to the single post template
+            imageUrl: authors.find(x => x.name === node.frontmatter.author)
+              .imageUrl,
+          },
+        })
+      }
     })
 
     // Create and populate an array of all tags
@@ -99,8 +115,9 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
 
-    const postsPerPage = 10
-    const numberOfPages = Math.ceil(posts.length / postsPerPage)
+    const postsPerPage = 4
+    const numberOfServers = 6
+    const numberOfPages = Math.ceil((posts.length-numberOfServers) / postsPerPage)
 
     Array.from({ length: numberOfPages }).forEach((_, index) => {
       const isFirstPage = index === 0
