@@ -8,6 +8,7 @@ import {
   CardBody,
   CardSubtitle,
   CardText,
+  CardTitle,
   Button,
 } from "reactstrap"
 import Img from "gatsby-image"
@@ -35,12 +36,16 @@ const SinglePost = ({ data, pageContext }) => {
           fluid={post.image.childImageSharp.fluid}
         />
         <CardBody>
-          <CardSubtitle>
+          <CardTitle>
             Ip Address: <span className="text-highlight">{post.address}</span>
-          </CardSubtitle><br/>
+          </CardTitle>
           <CardSubtitle>
             Publicity: <span className="text-highlight">{post.publicity}</span>
           </CardSubtitle>
+          <CardSubtitle>
+            Created by <span>{post.creator}</span>
+          </CardSubtitle>
+          
           <CardText></CardText>
           <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
           <Button
@@ -125,6 +130,7 @@ export const postQuery = graphql`
         date(formatString: "MMM Do YYYY")
         address
         status
+        creator
         publicity
         modsDownload
         image {

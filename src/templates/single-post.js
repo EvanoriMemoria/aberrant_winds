@@ -32,11 +32,9 @@ const SinglePost = ({ data, pageContext }) => {
       <SEO title={post.title} />
       <Card>
         <CardBody>
-          <CardTitle>
-            <h2 className="newsHeader">{post.title}</h2>
-          </CardTitle>
+        <span className="post-date">{post.date}</span>
           <CardSubtitle>
-              Posted by <span className="text-highlight">{post.author}</span>
+              By <span className="text-highlight">{post.author}</span>
           </CardSubtitle>
           <CardText></CardText>
           <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />

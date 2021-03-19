@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import Server from "../components/Server"
+import Post from "../components/Post"
 import { graphql } from "gatsby"
 import authors from "../util/authors"
 
@@ -17,7 +17,7 @@ const authorPosts = ({ data, pageContext }) => {
       authorImageFluid={data.file.childImageSharp.fluid}
     >
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <Server
+        <Post
           key={node.id}
           slug={node.fields.slug}
           title={node.frontmatter.title}

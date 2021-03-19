@@ -162,7 +162,6 @@ const sidebarQuery = graphql`
           frontmatter {
             title
             address
-            lookupAddress
             image {
               childImageSharp {
                 fluid(maxWidth: 300) {

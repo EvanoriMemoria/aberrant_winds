@@ -1,14 +1,16 @@
 ---
 title: 'Rebirth of the Night'
-date: 2021-10-02 14:00:00
+date: 2020-02-26
 author: 'fergenbergel'
+creator: 'CalaMariGold et al.'
 type: 'server'
 status: 'Active'
 publicity: 'Public'
 image: '../../images/rotn-logo.png'
 address: 'rotn.aberrantwinds.xyz'
-lookupAddress: 'rotn.aberrantwinds.xyz:25570'
 modsDownload: 'https://www.curseforge.com/minecraft/modpacks/rebirth-of-the-night'
+tags:
+ - Server
 ---
 
-This is the offical Aberrant Winds' Rebirth of the Night modded minecraft server!
+This is the offical Aberrant Winds' Rebirth of the Night modded minecraft server! This complete overhaul modpack features heavily modified and blended systems, leading to new and difficult experiences. Nearly every aspect of minecraft is built apon and changed in some way in an attempt to generate deeper and more exciting moments during play.

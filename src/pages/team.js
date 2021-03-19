@@ -31,7 +31,7 @@ const TeamPage = () => (
               color="$navbar-text"
               href={`/author/${slugify(authors[0].name)}`}
             >
-              View Hosted Servers
+              View Posts and Servers
             </Button>
           </CardBody>
         </Card>

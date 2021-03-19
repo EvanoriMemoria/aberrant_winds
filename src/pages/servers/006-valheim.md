@@ -1,14 +1,16 @@
 ---
 title: 'Valheim'
-date: 2021-11-01 14:00:00
+date: 2021-02-10
 author: 'fergenbergel'
+creator: 'Iron Gate'
 type: 'server'
 status: 'Active'
 publicity: 'Private'
-image: '../../images/rotn-banner.png'
-address: 'rotnbeta.aberrantwinds.xyz'
-lookupAddress: 'rotnbeta.aberrantwinds.xyz:25568'
-modsDownload: 'https://www.curseforge.com/minecraft/modpacks/rebirth-of-the-night/files'
+image: '../../images/logo-valheim.png'
+address: 'none'
+modsDownload: 'https://store.steampowered.com/app/892970/Valheim/'
+tags:
+ - Server
 ---
 
-This is the official Aberrant Winds' Rebirth of the Night Beta Branch server!
+This is the official (and private) Aberrant Winds' Valheim Server! Unfortunately we are not accepting applications to join at the moment.

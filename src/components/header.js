@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => {
     <Navbar fixed="top" expand="sm">
       <div className="container">
         <NavbarBrand href="/">{siteTitle}</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler className="navbar-dark" onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>

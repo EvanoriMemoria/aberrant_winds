@@ -1,16 +1,17 @@
 .pagination > li > a
 {
-    background-color: green;
-    color: orange;
+    color: $link-color;
+    background-color: $navbar-dark;
+    border: 1px solid $navbar-dark;
 }
 .pagination > li > a:focus,
 .pagination > li > a:hover,
 .pagination > li > span:focus,
 .pagination > li > span:hover
 {
-    color: #5a5a5a;
-    background-color: #eee;
-    border-color: #ddd;
+    background-color: #5A4181;
+    border: solid 1px #5A4181;
+    color: $navbar-text
 }
 .pagination > .active > .page-link
 {
