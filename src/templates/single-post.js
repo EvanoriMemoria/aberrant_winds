@@ -47,14 +47,13 @@ const SinglePost = ({ data, pageContext }) => {
           </ul>
         </CardBody>
       </Card>
-      <h3 className="text-center">Share this Server</h3>
+      <h3 className="text-center">Share this Post</h3>
       <div className="text-center social-share-links">
         <ul>
           <li>
             <a
               href={
                 "https://www.facebook.com/sharer/sharer.php?u=" +
-                message +
                 baseUrl +
                 "/" +
                 pageContext.slug

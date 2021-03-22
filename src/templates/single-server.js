@@ -67,7 +67,6 @@ const SinglePost = ({ data, pageContext }) => {
             <a
               href={
                 "https://www.facebook.com/sharer/sharer.php?u=" +
-                message +
                 baseUrl +
                 "/" +
                 pageContext.slug
@@ -100,8 +99,7 @@ const SinglePost = ({ data, pageContext }) => {
           <li>
             <a
               href={
-                "https://www.linkedin.com/shareArticle?url=" +
-                message +
+                "https://www.linkedin.com/sharing/share-offsite/?url=" +
                 baseUrl +
                 "/" +
                 pageContext.slug
