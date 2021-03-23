@@ -94,9 +94,6 @@ const Sidebar = ({ author, authorFluid }) => (
     </Card>
     <Card>
       <CardBody>
-        <CardTitle className="text-center text-uppercase">
-          Check Out These Cool Projects!
-        </CardTitle>
         <CardTitle className="text-center">
           <a
             href="https://www.beansproutillustrations.com/"
@@ -117,8 +114,11 @@ const Sidebar = ({ author, authorFluid }) => (
             style={{ width: "100%" }}
           />
         </a>
+      </CardBody>
+    </Card>
+    <Card>
+      <CardBody>
         <CardTitle className="text-center">
-          <br />
           <a
             href="https://www.instagram.com/alex.rust.art/"
             target="_blank"

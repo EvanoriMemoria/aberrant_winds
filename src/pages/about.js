@@ -14,14 +14,20 @@ const AboutPage = () => (
           players that came together around the Rebirth of the Night modpack.
         </p>
         <h2>Values</h2>
-        Aberrant Winds was created to be a fun and welcoming place for all
-        individuals. I cannot accomplish this alone so I humbly ask for your assistance by being a positive influence to all in the community.
-        On that note: if you have a grievance with another player please send me a private message through discord (fergenbergel#2539) and try your best not to escalate the situation.
+        <p>
+          Aberrant Winds was created to be a fun and welcoming place for all
+          individuals. I cannot accomplish this alone so I humbly ask for your
+          assistance by being a positive influence to all in the community.
+        </p>
         <h2>Ads</h2>
-        You may have noticed there are ad-like images in the sidebar on the right. 
-        These are my effort to support small business artists who are just starting out. 
-        I do not get any revenue from these but believe they are worth checking out and are positive artistically inclined people. 
-        I have gained permission from each of the authors to use the images and have links from this website.
+        <p>
+          You may have noticed there are ad-like images in the sidebar on the
+          right. These are my effort to support small business artists who are
+          just starting out. I do not get any revenue from these but believe
+          they are worth checking out and are positive, artistically inclined
+          people. I have gained permission from each of the authors to use the
+          images.
+        </p>
         <h2>Hardware</h2>
         <p>
           <b>OS:</b> Debian <br />
@@ -33,9 +39,12 @@ const AboutPage = () => (
           <b>Storage:</b> Samsung 970 EVO SSD 500GB M22 NVMe{" "}
         </p>
         <h2>Location</h2>
-        All of the servers are hosted by fergenbergel in Montana. Connection to
-        other countries and the East coast has been known to be a bit spotty at
-        times, but the majority of the players are not local and have a good time.
+        <p>
+          All of the servers are hosted by fergenbergel in Montana. Connection
+          to other countries and the East coast has been known to be a bit
+          spotty at times, but the majority of the players are not local and
+          have a good time.
+        </p>
       </CardBody>
     </Card>
   </Layout>
