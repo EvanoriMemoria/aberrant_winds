@@ -12,11 +12,11 @@ const RulesPage = () => (
         <p>
           I appreciate that you've taken the time to come read the rules.
           They're not anything out of the ordinary but I do expect that all
-          players follow them. Ignorance is not a valid excuse to not follow the rules.
-          Basically they cover using common human courtesy,
-          sure you're anonymous, but I have no misgivings banning people who are
-          being disruptive or inappropriate let alone anything worse. In no
-          vague terms this means:
+          players follow them. Ignorance is not a valid excuse to not follow the
+          rules. Basically they cover using common human courtesy, sure you're
+          anonymous, but I have no misgivings banning people who are being
+          disruptive or inappropriate let alone anything worse. In no vague
+          terms this means:
         </p>
         <ol>
           <li>No Racism, sexism, homophobia, prejudice, or discrimination.</li>
@@ -25,16 +25,26 @@ const RulesPage = () => (
             members.
           </li>
           <li>Don't share personal information.</li>
-          <li>
-            Don't grief or break other people's things.
-          </li>
+          <li>Don't grief or break other people's things.</li>
         </ol>
 
+        <h2>Retaliation</h2>
+        <p>
+          I do not support or endorse retaliation of any kind. If you retaliate
+          against another player who you believe has wronged you, you will also
+          be punished. Please use the report another player steps found below
+          instead and take a break if you must.
+        </p>
+
         <h2>Report another Player</h2>
-        If you have a grievance with another player please send me a private message 
-        through discord (fergenbergel#2539) and try your best not to escalate the situation. 
-        The message should include your minecraft username, their minecraft username, 
-        the grievance, and the time or estimated time it occured.
+        <p>
+          If you have a grievance with another player please send me a private
+          message through discord (fergenbergel#2539) and try your best not to
+          escalate the situation. The message should include your minecraft
+          username, their minecraft username, the grievance, and the time or
+          estimated time it occured. Screenshots and an explanation are an
+          effective way of sharing this information.
+        </p>
       </CardBody>
     </Card>
   </Layout>

@@ -8,7 +8,7 @@ import { Row, Col } from "reactstrap"
 const IndexPage = () => {
   return (
     <Layout pageTitle="Welcome to Aberrant Winds!" pageId="index">
-      <SEO title="Home" />
+      <SEO title="Aberrant Winds Servers" />
       <StaticQuery
         query={indexQuery}
         render={data => {
