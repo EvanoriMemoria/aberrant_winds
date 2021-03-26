@@ -1,0 +1,12 @@
+---
+title: "Worldbuilding: Aer'Atra"
+date: 2021-03-25
+author: 'fergenbergel'
+type: 'aeratra'
+tags: 
+ - Aer'Atra
+---
+
+I have been a long time player and fan of any and all strange and different worlds be they fantasy, sci-fi, post apocalyptic, or otherwise. After running Dungeons and Dragons Fifth Edition for more than a few sessions I felt it was much too clunky and the story was not able to come through the choppy encounters (experiences may vary). I broadened my horizons and tried game after game in an attempt to find the one that was simple and intuitive enough to allow me to really get the story flowing without having to worry about who rolled what and if they forgot to multiply this by that, all while keeping everyone engaged. Thus, Aer'Atra was born from my more recent experiments running games with as little as a D10 and a bunch of note-cards. Though the Aer'Atra system is a fair bit more complex than a D10 and some note-cards, it takes some of the burden off of the Game Master by bringing much needed consistency and simplicity. In a previous version of this book a large amount of it was comprised of rules and items for combat, however, Aer'Atra is not intended to be a game about murder-hobos and fighting your way around every corner. The Aer'Atra world and system are meant to encourage creative resolution to conflicts and adventure. This game is intended to be a harrowing exploration of Aer'Atra; the world I have been creating for much longer than I thought possible. Here you will encounter strange beasts, amazing phenomena, weird mutations and play your role in the fight for survival. Welcome to Aer'Atra; where creativity might just save your life.
+
+Aer'Atra was once much like our world with, cities, mountains, lakes, jets, animals, nuclear reactors, bugs, and people. During a particularly brutal solar maximum where temperatures around the world increased by as much as 30 degrees fahrenheit. Many places were left devoid arid and sun-baked. Our story starts in one such place, on the shores of the ancient lake Nissini that dried to a husk of its former self with the great city Tarnisus at its banks. Once toward the inside of a large continent, Tarnisus is now an island surrounded by a mysterious liquid that eats away at the land and drastically mutates any living organisms it contacts. You live here, on the isle Tarnisus in one of many bunkers created for any number of doomsday scenarios.

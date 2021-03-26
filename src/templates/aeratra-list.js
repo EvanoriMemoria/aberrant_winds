@@ -4,7 +4,7 @@ import Post from "../components/Post"
 import { graphql } from "gatsby"
 import PaginationLinks from '../components/PaginationLinks'
 
-const postList = (props) => {
+const aeratraList = (props) => {
   const posts = props.data.allMarkdownRemark.edges
   const { currentPage, numberOfPages } = props.pageContext
 
@@ -22,13 +22,13 @@ const postList = (props) => {
           tags={node.frontmatter.tags}
         />
       ))}
-      <PaginationLinks currentPage={currentPage} numberOfPages={numberOfPages} homePage='news' pageType='page'/>
+      <PaginationLinks currentPage={currentPage} numberOfPages={numberOfPages} homePage='aeratra' pageType='aeratra'/>
     </Layout>
   )
 }
 
-export const postListQuery = graphql`
-  query postListQuery($skip: Int!, $limit: Int!) {
+export const aeratraListQuery = graphql`
+  query aeratraListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { type: { eq: "post" } } }
@@ -55,4 +55,4 @@ export const postListQuery = graphql`
   }
 `
 
-export default postList
+export default aeratraList

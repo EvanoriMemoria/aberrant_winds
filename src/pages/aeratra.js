@@ -10,8 +10,8 @@ const newsPage = () => {
   let numberOfPages
 
   return (
-    <Layout pageTitle="News" pageId="news">
-      <SEO title="Aberrant Winds News" />
+    <Layout pageTitle="Aer'Atra" pageId="aeratra">
+      <SEO title="Aer'Atra" />
       <StaticQuery
         query={indexQuery}
         render={data => {
@@ -31,7 +31,7 @@ const newsPage = () => {
                   tags={node.frontmatter.tags}
                 />
               ))}
-              <PaginationLinks currentPage={1} numberOfPages={numberOfPages} pageType="page" homePage="news" />
+              <PaginationLinks currentPage={1} numberOfPages={numberOfPages} pageType="aeratra" homePage="aeratra" />
             </div>
           )
         }}
@@ -44,7 +44,7 @@ const indexQuery = graphql`
   query {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { type: { eq: "post" } } }
+      filter: { frontmatter: { type: { eq: "aeratra" } } }
       limit: 4
     ) {
       totalCount
