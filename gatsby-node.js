@@ -20,7 +20,6 @@ exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
   let numberOfServers = 0
-  let numberOfAerAtra = 0
   let numberOfPosts = 0
 
   const templates = {
@@ -28,7 +27,6 @@ exports.createPages = ({ actions, graphql }) => {
     tagsPage: path.resolve("src/templates/tags-page.js"),
     tagposts: path.resolve("src/templates/tag-posts.js"),
     postList: path.resolve("src/templates/post-list.js"),
-    aeratraList: path.resolve("src/templates/aeratra-list.js"),
     authorPosts: path.resolve("src/templates/author-posts.js"),
     singlePost: path.resolve("src/templates/single-post.js"),
   }
@@ -62,9 +60,6 @@ exports.createPages = ({ actions, graphql }) => {
       if (node.frontmatter.type === "post") {
         comp = templates.singlePost
         numberOfPosts++
-      }
-      if(node.frontmatter.type === "aeratra"){
-        numberOfAerAtra++
       }
       createPage({
         path: node.fields.slug,
@@ -118,7 +113,7 @@ exports.createPages = ({ actions, graphql }) => {
 
     const postsPerPage = 4
     const numberOfPages = Math.ceil(
-      (posts.length - numberOfServers - numberOfAerAtra) / postsPerPage
+      (posts.length - numberOfServers) / postsPerPage
     )
 
     Array.from({ length: numberOfPosts }).forEach((_, index) => {
@@ -130,24 +125,6 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: `/page/${currentPage}`,
         component: templates.postList,
-        context: {
-          limit: postsPerPage,
-          skip: index * postsPerPage,
-          currentPage,
-          numberOfPages,
-        },
-      })
-    })
-
-    Array.from({ length: numberOfAerAtra }).forEach((_, index) => {
-      const isFirstPage = index === 0
-      const currentPage = index + 1
-
-      if (isFirstPage) return
-
-      createPage({
-        path: `/aeratra/${currentPage}`,
-        component: templates.aeratraList,
         context: {
           limit: postsPerPage,
           skip: index * postsPerPage,
