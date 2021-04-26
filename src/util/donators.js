@@ -1,4 +1,4 @@
-const donators = [ "iGizmodo", ]
+const donators = [ "iGizmodo", "Capio13" ]
   
   module.exports = donators
   
