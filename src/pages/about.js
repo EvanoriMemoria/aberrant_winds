@@ -2,33 +2,40 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Card, CardBody } from "reactstrap"
+import { Card, CardBody, CardTitle } from "reactstrap"
 
 const AboutPage = () => (
   <Layout pageTitle="About us">
     <SEO title="About" />
     <Card>
       <CardBody>
-        <p>
-          Aberrant Winds was created for a small community of modded minecraft
-          players that came together around the Rebirth of the Night modpack.
-        </p>
-        <h2>Values</h2>
+        <CardTitle>
+          <h2>Values</h2>
+        </CardTitle>
         <p>
           Aberrant Winds was created to be a fun and welcoming place for all
           individuals. I cannot accomplish this alone so I humbly ask for your
           assistance by being a positive influence to all in the community.
         </p>
-        <h2>Ads</h2>
+      </CardBody>
+    </Card>
+    <Card>
+      <CardBody>
+        <CardTitle>
+          <h2>Advertisements</h2>
+        </CardTitle>
         <p>
-          You may have noticed there are ad-like images in the sidebar on the
-          right. These are my effort to support small business artists who are
-          just starting out. I do not get any revenue from these but believe
-          they are worth checking out and are positive, artistically inclined
-          people. I have gained permission from each of the authors to use the
-          images.
+          These advertisements are solely for people creators who I want to
+          support. I do not get any revenue from these but think you should
+          definitely check them out!
         </p>
-        <h2>Hardware</h2>
+      </CardBody>
+    </Card>
+    <Card>
+      <CardBody>
+        <CardTitle>
+          <h2>Hardware</h2>
+        </CardTitle>
         <p>
           <b>OS:</b> Debian <br />
           <b>CPU:</b> Ryzen 5 3600 <br />
@@ -38,7 +45,13 @@ const AboutPage = () => (
           <br />
           <b>Storage:</b> Samsung 970 EVO SSD 500GB M22 NVMe{" "}
         </p>
-        <h2>Location</h2>
+      </CardBody>
+    </Card>
+    <Card>
+      <CardBody>
+        <CardTitle>
+          <h2>Location</h2>
+        </CardTitle>
         <p>
           All of the servers are hosted by fergenbergel in Montana. Connection
           to other countries and the East coast has been known to be a bit

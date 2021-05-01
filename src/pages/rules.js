@@ -2,13 +2,16 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Card, CardBody } from "reactstrap"
+import { Card, CardBody, CardTitle } from "reactstrap"
 
 const RulesPage = () => (
   <Layout pageTitle="Community Rules">
     <SEO title="Community Rules" />
     <Card>
       <CardBody>
+        <CardTitle>
+          <h2>Preface</h2>
+        </CardTitle>
         <p>
           I appreciate that you've taken the time to come read the rules.
           They're not anything out of the ordinary but I do expect that all
@@ -18,8 +21,15 @@ const RulesPage = () => (
           disruptive or inappropriate let alone anything worse. In no vague
           terms this means:
         </p>
+      </CardBody>
+    </Card>
+    <Card>
+      <CardBody>
+        <CardTitle>
+          <h2>Rules</h2>
+        </CardTitle>
         <ol>
-          <li>No Racism, sexism, homophobia, prejudice, or discrimination.</li>
+          <li>No Racism, sexism, homophobia, prejudice, discrimination, etc.</li>
           <li>
             Use common sense and empathy to be kind to your fellow community
             members.
@@ -27,16 +37,26 @@ const RulesPage = () => (
           <li>Don't share personal information.</li>
           <li>Don't grief or break other people's things.</li>
         </ol>
-
-        <h2>Retaliation</h2>
+      </CardBody>
+    </Card>
+    <Card>
+      <CardBody>
+        <CardTitle>
+          <h2>Retaliation</h2>
+        </CardTitle>
         <p>
           I do not support or endorse retaliation of any kind. If you retaliate
           against another player who you believe has wronged you, you will also
           be punished. Please use the report another player steps found below
           instead and take a break if you must.
         </p>
-
-        <h2>Report another Player</h2>
+      </CardBody>
+    </Card>
+    <Card>
+      <CardBody>
+        <CardTitle>
+          <h2>Report another Player</h2>
+        </CardTitle>
         <p>
           If you have a grievance with another player please send me a private
           message through discord (fergenbergel#2539) and try your best not to
