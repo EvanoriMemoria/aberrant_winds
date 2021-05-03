@@ -8,4 +8,4 @@ tags:
  - discord
 ---
 
-The Aberrant Winds discord has been updated to have automatic member join from the rules channel to incentivise reading the rules before joining a server. Additionally there are separate roles for each server which you can opt into to receive pings for announcements related to that server. Hopefully everyone finds these new changes to be more intuitive and user friendly than our previous system!
+The Aberrant Winds discord has been updated to have automated member join from the rules channel to incentivise reading the rules before joining a server. Additionally there are separate roles for each server which you can opt into to receive pings for announcements related to that server. Hopefully everyone finds these new changes to be more intuitive and user friendly than our previous system!

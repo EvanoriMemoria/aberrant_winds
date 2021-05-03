@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import authors from "../util/authors"
 import {
   Badge,
   Card,
@@ -14,13 +15,21 @@ const Post = ({ title, author, slug, date, body, tags }) => {
   return (
     <Card className="server-list">
       <CardBody>
-      <span className="post-date">{date}</span>
+        <span className="post-date">{date}</span>
         <CardTitle>
-          <h2 className="newsHeader"><Link to={`/${slug}`}>{title}</Link></h2>
+          <h2 className="newsHeader">
+            <Link to={`/${slug}`}>{title}</Link>
+          </h2>
         </CardTitle>
         <CardSubtitle>
-              Posted by <span className="text-highlight">{author}</span>
-          </CardSubtitle>
+          Posted by{" "}
+          <Link
+            to={`/author/${slugify(authors[0].name)}`}
+            className="text-highlight"
+          >
+            {author}
+          </Link>
+        </CardSubtitle>
         <CardText>{body}</CardText>
         <ul className="post-tags">
           {tags.map(tag => (
