@@ -25,8 +25,7 @@ const AboutPage = () => (
           <h2>Advertisements</h2>
         </CardTitle>
         <p>
-          These advertisements are solely for people creators who I want to
-          support. I do not get any revenue from these but think you should
+          These advertisements are solely to support creators I like. I do not get any revenue from these and think you should
           definitely check them out!
         </p>
       </CardBody>
