@@ -11,10 +11,13 @@ tags:
 
 I would like to thank Kale_Thyself for their work in reducing lag on beta servers. They supplied us with a list of tweaks with the goal of reducing lag. Here are the tweaks for posterity:
 
-1. In primitivemobs/primitivemods.cfg on line 35 modify "Enable Goblin"=true to false. 
+1. ~~In primitivemobs/primitivemods.cfg on line 35 modify "Enable Goblin"=true to false.~~
+Do not implement this change, it causes console spam and integration errors. If you already have modified it, you can just revert the line to true. 
 2. In betternether.cfg on line 424 modify CityEnabled=true to false. 
 3. In nyx.cfg on line 250 modify meteorChanceAfterGateNight=0.0007 to 0.00007. 
 4. In nyx.cfg on line 271 change meteorKillUnloaded=false to true. 
 5. In onslaught/onslaught.cfg on line 95 modify MAX\_CONCURRENT\_INVASIONS=5 to 2. 
 
-Please note these tips are specifically relating to Rebirth of the Night modpack version 3.0 Beta 5 and may not be applicable in subsequent versions of the modpack.
+Please note these tips are specifically relating to Rebirth of the Night modpack version 3.0 Beta 5 and may not be applicable in subsequent versions of the modpack. Results may vary.
+
+Edited July 12th 2021.
