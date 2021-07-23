@@ -35,6 +35,7 @@ const AboutPage = () => (
         <CardTitle>
           <h2>Hardware</h2>
         </CardTitle>
+        <h4>Server 1</h4>
         <p>
           <b>OS:</b> Debian <br />
           <b>CPU:</b> Ryzen 5 3600 <br />
@@ -43,6 +44,16 @@ const AboutPage = () => (
           <b>RAM:</b> 32GB DDR4 3200 MHz
           <br />
           <b>Storage:</b> Samsung 970 EVO SSD 500GB M22 NVMe{" "}
+        </p>
+        <h4>Server 2</h4>
+        <p>
+          <b>OS:</b> Ubuntu <br />
+          <b>CPU:</b> Ryzen 7 1800X <br />
+          <b>Motherboard:</b> X370 Taichi
+          <br />
+          <b>RAM:</b> 16GB DDR4 2134 MHz
+          <br />
+          <b>Storage:</b> BC501 Hynix NVMe 512GB SSD{" "}
         </p>
       </CardBody>
     </Card>

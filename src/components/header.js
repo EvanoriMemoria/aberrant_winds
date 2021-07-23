@@ -37,6 +37,9 @@ const Header = ({ siteTitle }) => {
             <NavItem>
               <NavLink href="/team/">Team</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href="https://cloud.aberrantwinds.xyz" target="_blank">Cloud</NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </div>
