@@ -4,6 +4,7 @@ date: 2020-02-26
 author: 'fergenbergel'
 creator: 'CalaMariGold et al.'
 type: 'server'
+subtype: 'gaming'
 status: 'Active'
 publicity: 'Public'
 image: '../../images/rotn-logo.png'

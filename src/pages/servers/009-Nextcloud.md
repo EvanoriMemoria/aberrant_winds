@@ -4,6 +4,7 @@ date: 2021-07-22
 author: 'fergenbergel'
 creator: 'Nextcloud Community'
 type: 'server'
+subtype: 'resource'
 status: 'Active'
 publicity: 'Private'
 image: '../../images/NextCloudLogo.png'

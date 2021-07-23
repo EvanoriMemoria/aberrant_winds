@@ -4,6 +4,7 @@ date: 2020-02-26
 author: 'fergenbergel'
 creator: 'Capio13'
 type: 'server'
+subtype: 'gaming'
 status: 'Active'
 publicity: 'Public'
 image: '../../images/edge-of-infinity-logo.png'

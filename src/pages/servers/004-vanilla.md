@@ -4,6 +4,7 @@ date: 2020-02-26
 author: 'fergenbergel'
 creator: 'Mojang'
 type: 'server'
+subtype: 'gaming'
 status: 'Inactive'
 publicity: 'Public'
 image: '../../images/minecraft-logo.png'

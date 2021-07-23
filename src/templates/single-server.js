@@ -36,9 +36,16 @@ const SinglePost = ({ data, pageContext }) => {
           fluid={post.image.childImageSharp.fluid}
         />
         <CardBody>
+        {post.subtype === "resource" && (
           <CardTitle>
-            Ip Address/URL: <span className="text-highlight">{post.address}</span>
+            URL: <a href={post.address} target="_blank">{post.address}</a>
           </CardTitle>
+        )}
+        {post.subtype === ("gaming") && (
+          <CardTitle>
+            IP Address: <span className="text-highlight">{post.address}</span>
+          </CardTitle>
+        )}
           <CardSubtitle>
             Publicity: <span className="text-highlight">{post.publicity}</span>
           </CardSubtitle>
@@ -48,6 +55,7 @@ const SinglePost = ({ data, pageContext }) => {
           
           <CardText></CardText>
           <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+          {post.subtype === "resource" && (
           <Button
             className="btn btn-outline-light float-right text-uppercase"
             color="$navbar-text"
@@ -55,8 +63,18 @@ const SinglePost = ({ data, pageContext }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Website
-          </Button>
+              Website
+          </Button>)}
+          {post.subtype === "gaming" && (
+          <Button
+            className="btn btn-outline-light float-right text-uppercase"
+            color="$navbar-text"
+            href={post.modsDownload}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+              Download
+          </Button>)}
           <Badge className={post.status==="Active" ? "active-highlight" : "inactive-highlight"}>{post.status}</Badge>
         </CardBody>
       </Card>
@@ -128,6 +146,7 @@ export const postQuery = graphql`
         date(formatString: "MMM Do YYYY")
         address
         status
+        subtype
         creator
         publicity
         modsDownload
