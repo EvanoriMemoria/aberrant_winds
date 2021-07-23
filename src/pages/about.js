@@ -25,8 +25,8 @@ const AboutPage = () => (
           <h2>Advertisements</h2>
         </CardTitle>
         <p>
-          These advertisements are solely to support creators I like. I do not get any revenue from these and think you should
-          definitely check them out!
+          Advertisements to the right are solely to support creators I appreciate. I do not get any revenue from these links!
+          Head to their websites/social media and check them out!
         </p>
       </CardBody>
     </Card>
@@ -54,6 +54,11 @@ const AboutPage = () => (
           <b>RAM:</b> 16GB DDR4 2134 MHz
           <br />
           <b>Storage:</b> BC501 Hynix NVMe 512GB SSD{" "}
+        </p>
+        <h4>Server 3</h4>
+        <p>
+          <b>OS:</b> Ubuntu Nextcloud for Raspberry Pi<br />
+          <b>System:</b> Raspberry Pi 4b 8GB <br />{" "}
         </p>
       </CardBody>
     </Card>
