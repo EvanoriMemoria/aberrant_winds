@@ -7,10 +7,10 @@ type: 'server'
 status: 'Active'
 publicity: 'Private'
 image: '../../images/NextCloudLogo.png'
-address: 'cloud.aberrantwinds.xyz'
+address: 'https://cloud.aberrantwinds.xyz'
 modsDownload: 'https://cloud.aberrantwinds.xyz'
 tags:
  - Server
 ---
 
-I created this Nextcloud instance to be of use to close friends and family. It is currently running from a Raspberry Pi. This is a private service.
+I created this [Nextcloud](https://nextcloud.com) instance to be of use to close friends and family. It is currently running from a Raspberry Pi. This is a private service.

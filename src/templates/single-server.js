@@ -37,7 +37,7 @@ const SinglePost = ({ data, pageContext }) => {
         />
         <CardBody>
           <CardTitle>
-            Ip Address: <span className="text-highlight">{post.address}</span>
+            Ip Address/URL: <span className="text-highlight">{post.address}</span>
           </CardTitle>
           <CardSubtitle>
             Publicity: <span className="text-highlight">{post.publicity}</span>
@@ -55,7 +55,7 @@ const SinglePost = ({ data, pageContext }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Download
+            Website
           </Button>
           <Badge className={post.status==="Active" ? "active-highlight" : "inactive-highlight"}>{post.status}</Badge>
         </CardBody>
