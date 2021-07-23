@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Railway');
 
-$site-font: 'Raleway', sans-serif;
+$site-font: 'Roboto', sans-serif;
+$header-font: 'Railway', sans-serif;
 
 $light-gray: rgb(240, 240, 240);
 $dark-gray: rgb(80, 80, 80);
@@ -9,6 +11,6 @@ $navbar-dark: rgb(40, 40, 40);
 $navbar-text: rgb(230, 230, 230);
 $link-color: #b272ed;
 $discord-link-color: #9966FF;
-$header-text: rgb(230, 230, 230);
+$text: rgb(230, 230, 230);
 $white: white;
 $button-light: #18cce7;

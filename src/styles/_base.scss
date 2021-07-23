@@ -3,13 +3,13 @@
 }
 body {
   background-color: $background-dark;
-  color: $white;
+  color: $text;
   font-family: $site-font;
 }
 a {
   color: $link-color;
   &:hover {
-    color: white;
+    color: $white;
     text-decoration: none;
   }
 }
@@ -37,7 +37,7 @@ a {
 
 //discord buttons
 .join-discord{
-  color: white;
+  color: $white;
   border: 2px solid $link-color;
   font-weight: bold;
   a{
@@ -54,7 +54,8 @@ a {
 h1 {
   margin-bottom: 20px;
   text-align: center;
-  color: $header-text;
+  color: $text;
+  font-family: $header-font;
 }
 .navbar {
   background-color: $navbar-dark;
