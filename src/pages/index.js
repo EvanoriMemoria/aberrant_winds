@@ -4,14 +4,21 @@ import SEO from "../components/seo"
 import { graphql, StaticQuery } from "gatsby"
 import Server from "../components/Server"
 import { Row, Col } from "reactstrap"
+import PaginationLinks from "../components/PaginationLinks"
 
 const IndexPage = () => {
+  const serversPerPage = 6
+  let numberOfPages
+
   return (
     <Layout pageTitle="Welcome to Aberrant Winds!" pageId="index">
       <SEO title="Aberrant Winds Servers" />
       <StaticQuery
         query={indexQuery}
         render={data => {
+          numberOfPages = Math.ceil(
+            data.allMarkdownRemark.totalCount / serversPerPage
+          )
           return (
             <div>
               <Row>
@@ -30,6 +37,12 @@ const IndexPage = () => {
                   </Col>
                 ))}
               </Row>
+              <PaginationLinks
+                currentPage={1}
+                numberOfPages={numberOfPages}
+                pageType="/servers/"
+                homePage="/"
+              />
             </div>
           )
         }}
@@ -40,8 +53,11 @@ const IndexPage = () => {
 const indexQuery = graphql`
   query {
     allMarkdownRemark(
-      sort: { fields: [frontmatter___status, frontmatter___title], order: [ASC, ASC] }
-      limit: 10
+      sort: {
+        fields: [frontmatter___status, frontmatter___title]
+        order: [ASC, ASC]
+      }
+      limit: 6
       filter: { frontmatter: { type: { eq: "server" } } }
     ) {
       totalCount

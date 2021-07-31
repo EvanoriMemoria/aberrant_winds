@@ -36,46 +36,59 @@ const SinglePost = ({ data, pageContext }) => {
           fluid={post.image.childImageSharp.fluid}
         />
         <CardBody>
-        {post.subtype === "resource" && (
-          <CardTitle>
-            URL: <a href={post.address} target="_blank">{post.address}</a>
-          </CardTitle>
-        )}
-        {post.subtype === ("gaming") && (
-          <CardTitle>
-            IP Address: <span className="text-highlight">{post.address}</span>
-          </CardTitle>
-        )}
+          {post.subtype === "resource" && (
+            <CardTitle>
+              URL:{" "}
+              <a href={post.address} target="_blank" rel="noopener noreferrer">
+                {post.address}
+              </a>
+            </CardTitle>
+          )}
+          {post.subtype === "gaming" && (
+            <CardTitle>
+              IP Address: <span className="text-highlight">{post.address}</span>
+            </CardTitle>
+          )}
           <CardSubtitle>
             Publicity: <span className="text-highlight">{post.publicity}</span>
           </CardSubtitle>
           <CardSubtitle>
             Created by <span>{post.creator}</span>
           </CardSubtitle>
-          
+
           <CardText></CardText>
           <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
           {post.subtype === "resource" && (
-          <Button
-            className="btn btn-outline-light float-right text-uppercase"
-            color="$navbar-text"
-            href={post.modsDownload}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+            <Button
+              className="btn btn-outline-light float-right text-uppercase"
+              color="$navbar-text"
+              href={post.modsDownload}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Website
-          </Button>)}
+            </Button>
+          )}
           {post.subtype === "gaming" && (
-          <Button
-            className="btn btn-outline-light float-right text-uppercase"
-            color="$navbar-text"
-            href={post.modsDownload}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+            <Button
+              className="btn btn-outline-light float-right text-uppercase"
+              color="$navbar-text"
+              href={post.modsDownload}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Download
-          </Button>)}
-          <Badge className={post.status==="Active" ? "active-highlight" : "inactive-highlight"}>{post.status}</Badge>
+            </Button>
+          )}
+          <Badge
+            className={
+              post.status === "Active"
+                ? "active-highlight"
+                : "inactive-highlight"
+            }
+          >
+            {post.status}
+          </Badge>
         </CardBody>
       </Card>
       <h3 className="text-center">Share this Server</h3>

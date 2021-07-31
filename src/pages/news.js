@@ -31,7 +31,12 @@ const newsPage = () => {
                   tags={node.frontmatter.tags}
                 />
               ))}
-              <PaginationLinks currentPage={1} numberOfPages={numberOfPages} pageType="page" homePage="news" />
+              <PaginationLinks
+                currentPage={1}
+                numberOfPages={numberOfPages}
+                pageType="/page/"
+                homePage="/news/"
+              />
             </div>
           )
         }}

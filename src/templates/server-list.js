@@ -2,27 +2,37 @@ import React from "react"
 import Layout from "../components/layout"
 import Server from "../components/Server"
 import { graphql } from "gatsby"
-import PaginationLinks from '../components/PaginationLinks'
+import { Row, Col } from "reactstrap"
+import PaginationLinks from "../components/PaginationLinks"
 
-const serverList = (props) => {
+const serverList = props => {
   const posts = props.data.allMarkdownRemark.edges
-  const { currentPage, numberOfPages } = props.pageContext
+  const { serverCurrentPage, numberOfServerPages } = props.pageContext
 
   return (
-    <Layout pageTitle={`Page: ${currentPage}`}>
-      {posts.map(({ node }) => (
-        <Server
-          key={node.id}
-          slug={node.fields.slug}
-          title={node.frontmatter.title}
-          author={node.frontmatter.author}
-          date={node.frontmatter.date}
-          body={node.excerpt}
-          status={node.frontmatter.status}
-          fluid={node.frontmatter.image.childImageSharp.fluid}
-        />
-      ))}
-      <PaginationLinks currentPage={currentPage} numberOfPages={numberOfPages}/>
+    <Layout pageTitle={`Servers Page: ${serverCurrentPage}`}>
+      <Row>
+        {posts.map(({ node }) => (
+          <Col md="6">
+            <Server
+              key={node.id}
+              slug={node.fields.slug}
+              title={node.frontmatter.title}
+              author={node.frontmatter.author}
+              date={node.frontmatter.date}
+              body={node.excerpt}
+              status={node.frontmatter.status}
+              fluid={node.frontmatter.image.childImageSharp.fluid}
+            />
+          </Col>
+        ))}
+      </Row>
+      <PaginationLinks
+        currentPage={serverCurrentPage}
+        numberOfPages={numberOfServerPages}
+        homePage="/"
+        pageType="/servers/"
+      />
     </Layout>
   )
 }
@@ -30,7 +40,11 @@ const serverList = (props) => {
 export const serverListQuery = graphql`
   query serverListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: {
+        fields: [frontmatter___status, frontmatter___title]
+        order: [ASC, ASC]
+      }
+      filter: { frontmatter: { type: { eq: "server" } } }
       limit: $limit
       skip: $skip
     ) {
@@ -41,10 +55,12 @@ export const serverListQuery = graphql`
             title
             date(formatString: "MMM Do YYYY")
             author
+            type
             status
+            tags
             image {
               childImageSharp {
-                fluid(maxWidth: 650, maxHeight: 371) {
+                fluid(maxWidth: 650) {
                   ...GatsbyImageSharpFluid
                 }
               }

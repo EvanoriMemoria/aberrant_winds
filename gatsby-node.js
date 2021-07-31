@@ -27,6 +27,7 @@ exports.createPages = ({ actions, graphql }) => {
     tagsPage: path.resolve("src/templates/tags-page.js"),
     tagposts: path.resolve("src/templates/tag-posts.js"),
     postList: path.resolve("src/templates/post-list.js"),
+    serverList: path.resolve("src/templates/server-list.js"),
     authorPosts: path.resolve("src/templates/author-posts.js"),
     singlePost: path.resolve("src/templates/single-post.js"),
   }
@@ -115,8 +116,9 @@ exports.createPages = ({ actions, graphql }) => {
     const numberOfPages = Math.ceil(
       (posts.length - numberOfServers) / postsPerPage
     )
-
-    Array.from({ length: numberOfPosts }).forEach((_, index) => {
+    
+    //Creates Post list pages
+    Array.from({ length: numberOfPages }).forEach((_, index) => {
       const isFirstPage = index === 0
       const currentPage = index + 1
 
@@ -130,6 +132,28 @@ exports.createPages = ({ actions, graphql }) => {
           skip: index * postsPerPage,
           currentPage,
           numberOfPages,
+        },
+      })
+    })
+
+    const serversPerPage = 6
+    const numberOfServerPages = Math.ceil((posts.length - numberOfPosts) / serversPerPage)
+
+    //Creates server list pages
+    Array.from({ length: numberOfServerPages }).forEach((_, serverIndex) => {
+      const serverIsFirstPage = serverIndex === 0
+      const serverCurrentPage = serverIndex + 1
+
+      if (serverIsFirstPage) return
+
+      createPage({
+        path: `/servers/${serverCurrentPage}`,
+        component: templates.serverList,
+        context: {
+          limit: serversPerPage,
+          skip: serverIndex * serversPerPage,
+          serverCurrentPage,
+          numberOfServerPages,
         },
       })
     })
