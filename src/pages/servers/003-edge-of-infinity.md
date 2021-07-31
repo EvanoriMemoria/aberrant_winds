@@ -9,7 +9,7 @@ status: 'Active'
 publicity: 'Public'
 image: '../../images/edge-of-infinity-logo.png'
 address: 'eoi.aberrantwinds.xyz'
-modsDownload: 'https://www.technicpack.net/modpack/edges-of-infinity.1770571'
+modsDownload: 'https://www.curseforge.com/minecraft/modpacks/edge-of-infinity'
 tags:
  - Server
 ---
