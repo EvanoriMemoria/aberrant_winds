@@ -1,6 +1,6 @@
 ---
 title: 'EOI Update 2.0.0'
-date: 2021-07-31
+date: 2021-08-01
 author: 'fergenbergel'
 type: 'post'
 tags: 
