@@ -34,7 +34,7 @@ const newsPage = () => {
               <PaginationLinks
                 currentPage={1}
                 numberOfPages={numberOfPages}
-                pageType="/page/"
+                pageType="/news/"
                 homePage="/news/"
               />
             </div>

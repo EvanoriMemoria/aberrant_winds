@@ -26,7 +26,7 @@ const postList = props => {
         currentPage={currentPage}
         numberOfPages={numberOfPages}
         homePage="/news/"
-        pageType="/page/"
+        pageType="/news/"
       />
     </Layout>
   )
