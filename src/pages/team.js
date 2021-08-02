@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import authors from "../util/authors"
 import {
   Button,
@@ -16,7 +16,7 @@ import { slugify } from "../util/utilityFunctions"
 
 const TeamPage = () => (
   <Layout pageTitle="Our Team">
-    <SEO title="Our Team" />
+    <Seo title="Our Team" />
     <Row className="mb-4">
       <div className="col-md-3">
         <img src={fergenImage} style={{ maxWidth: "100%" }} alt="fergen profile" />

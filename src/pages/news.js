@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { graphql, StaticQuery } from "gatsby"
 import Post from "../components/Post"
 import PaginationLinks from "../components/PaginationLinks"
@@ -11,7 +11,7 @@ const newsPage = () => {
 
   return (
     <Layout pageTitle="News" pageId="news">
-      <SEO title="Aberrant Winds News" />
+      <Seo title="Aberrant Winds News" />
       <StaticQuery
         query={indexQuery}
         render={data => {

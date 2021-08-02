@@ -7,13 +7,13 @@ import {
   CardText,
   CardBody,
 } from "reactstrap"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const Server = ({ title, slug, body, status, fluid }) => {
   return (
     <Card className="server-list">
       <Link to={`/${slug}`}>
-        <Img className="card-image-top" fluid={fluid} />
+        <GatsbyImage image={fluid} className="card-image-top" />
       </Link>
       <CardBody>
         <CardTitle>
@@ -30,7 +30,7 @@ const Server = ({ title, slug, body, status, fluid }) => {
         
       </CardBody>
     </Card>
-  )
+  );
 }
 
 export default Server

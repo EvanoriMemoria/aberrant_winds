@@ -1,12 +1,12 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { Card, CardBody, CardTitle } from "reactstrap"
 
 const AboutPage = () => (
   <Layout pageTitle="About us">
-    <SEO title="About" />
+    <Seo title="About" />
     <Card>
       <CardBody>
         <CardTitle>

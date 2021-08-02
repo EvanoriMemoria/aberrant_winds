@@ -22,7 +22,7 @@ const serverList = props => {
               date={node.frontmatter.date}
               body={node.excerpt}
               status={node.frontmatter.status}
-              fluid={node.frontmatter.image.childImageSharp.fluid}
+              fluid={node.frontmatter.image.childImageSharp.gatsbyImageData}
             />
           </Col>
         ))}
@@ -34,46 +34,40 @@ const serverList = props => {
         pageType="/servers/"
       />
     </Layout>
-  )
+  );
 }
 
-export const serverListQuery = graphql`
-  query serverListQuery($skip: Int!, $limit: Int!) {
-    allMarkdownRemark(
-      sort: {
-        fields: [frontmatter___status, frontmatter___title]
-        order: [ASC, ASC]
-      }
-      filter: { frontmatter: { type: { eq: "server" } } }
-      limit: $limit
-      skip: $skip
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "MMM Do YYYY")
-            author
-            type
-            status
-            tags
-            image {
-              childImageSharp {
-                fluid(maxWidth: 650) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
+export const serverListQuery = graphql`query serverListQuery($skip: Int!, $limit: Int!) {
+  allMarkdownRemark(
+    sort: {fields: [frontmatter___status, frontmatter___title], order: [ASC, ASC]}
+    filter: {frontmatter: {type: {eq: "server"}}}
+    limit: $limit
+    skip: $skip
+  ) {
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          date(formatString: "MMM Do YYYY")
+          author
+          type
+          status
+          tags
+          image {
+            childImageSharp {
+              gatsbyImageData(width: 650, layout: CONSTRAINED)
             }
           }
-          fields {
-            slug
-          }
-          excerpt
         }
+        fields {
+          slug
+        }
+        excerpt
       }
     }
   }
+}
 `
 
 export default serverList

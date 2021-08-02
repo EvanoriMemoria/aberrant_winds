@@ -1,12 +1,12 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { Card, CardBody, CardTitle } from "reactstrap"
 
 const RulesPage = () => (
   <Layout pageTitle="Community Rules">
-    <SEO title="Community Rules" />
+    <Seo title="Community Rules" />
     <Card>
       <CardBody>
         <CardTitle>

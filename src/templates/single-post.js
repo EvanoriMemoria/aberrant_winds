@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql, Link } from "gatsby"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import {
   Badge,
   Card,
@@ -25,9 +25,9 @@ const SinglePost = ({ data, pageContext }) => {
     <Layout
       pageTitle={post.title}
       postAuthor={author}
-      authorImageFluid={data.file.childImageSharp.fluid}
+      authorImageFluid={data.file.childImageSharp.gatsbyImageData}
     >
-      <SEO title={post.title} />
+      <Seo title={post.title} />
       <Card>
         <CardBody>
         <span className="post-date">{post.date}</span>
@@ -102,38 +102,33 @@ const SinglePost = ({ data, pageContext }) => {
         </ul>
       </div>
     </Layout>
-  )
+  );
 }
 
-export const postQuery = graphql`
-  query blogPostBySlug($slug: String!, $imageUrl: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      html
-      frontmatter {
-        title
-        author
-        date(formatString: "MMM Do YYYY")
-        tags
-        address
-        modsDownload
-        image {
-          childImageSharp {
-            fluid(maxWidth: 700) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-    file(relativePath: { eq: $imageUrl }) {
-      childImageSharp {
-        fluid(maxWidth: 300) {
-          ...GatsbyImageSharpFluid
+export const postQuery = graphql`query blogPostBySlug($slug: String!, $imageUrl: String!) {
+  markdownRemark(fields: {slug: {eq: $slug}}) {
+    id
+    html
+    frontmatter {
+      title
+      author
+      date(formatString: "MMM Do YYYY")
+      tags
+      address
+      modsDownload
+      image {
+        childImageSharp {
+          gatsbyImageData(width: 700, layout: CONSTRAINED)
         }
       }
     }
   }
+  file(relativePath: {eq: $imageUrl}) {
+    childImageSharp {
+      gatsbyImageData(width: 300, layout: CONSTRAINED)
+    }
+  }
+}
 `
 
 export default SinglePost

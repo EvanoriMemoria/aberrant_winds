@@ -1,6 +1,6 @@
 import React from "react"
 import { Card, CardTitle, CardBody, CardText } from "reactstrap"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Helmet from "react-helmet"
 import bedtime from "../images/bedtime.jpeg"
@@ -13,7 +13,7 @@ const Sidebar = ({ author, authorFluid }) => (
     </Helmet>
     {author && (
       <Card>
-        <Img className="card-image-top" fluid={authorFluid} />
+        <GatsbyImage image={authorFluid} className="card-image-top" />
         <CardBody>
           <CardTitle className="text-center text-uppercase mb-3">
             {author.name}

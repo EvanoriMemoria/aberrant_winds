@@ -14,7 +14,7 @@ const authorPosts = ({ data, pageContext }) => {
     <Layout
       pageTitle={pageHeader}
       postAuthor={author}
-      authorImageFluid={data.file.childImageSharp.fluid}
+      authorImageFluid={data.file.childImageSharp.gatsbyImageData}
     >
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <Post
@@ -28,40 +28,37 @@ const authorPosts = ({ data, pageContext }) => {
         />
       ))}
     </Layout>
-  )
+  );
 }
 
-export const authorQuery = graphql`
-  query($authorName: String!, $imageUrl: String!) {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { author: { eq: $authorName } } }
-    ) {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "MMM Do YYYY")
-            author
-            tags
-          }
-          fields {
-            slug
-          }
-          excerpt
+export const authorQuery = graphql`query ($authorName: String!, $imageUrl: String!) {
+  allMarkdownRemark(
+    sort: {fields: [frontmatter___date], order: DESC}
+    filter: {frontmatter: {author: {eq: $authorName}}}
+  ) {
+    totalCount
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          date(formatString: "MMM Do YYYY")
+          author
+          tags
         }
-      }
-    }
-    file(relativePath: { eq: $imageUrl }) {
-      childImageSharp {
-        fluid(maxWidth: 300) {
-          ...GatsbyImageSharpFluid
+        fields {
+          slug
         }
+        excerpt
       }
     }
   }
+  file(relativePath: {eq: $imageUrl}) {
+    childImageSharp {
+      gatsbyImageData(width: 300, layout: CONSTRAINED)
+    }
+  }
+}
 `
 
 export default authorPosts
