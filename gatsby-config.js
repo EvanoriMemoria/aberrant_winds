@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Aberrant Winds`,
-    description: `Minecraft servers hosted for the Aberrant Winds community!`,
+    description: `Servers hosted for the Aberrant Winds community!`,
+    image: "/images/aberrant_winds.png",
     author: `@fergenbergel`,
   },
   plugins: [
