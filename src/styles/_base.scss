@@ -13,6 +13,9 @@ a {
     text-decoration: none;
   }
 }
+.badge-colors {
+  background-color: rgb(38, 117, 235);
+}
 .newsHeader{
   text-align: left;
 }
@@ -80,4 +83,8 @@ ul {
   color: $navbar-text;
   background-color: $navbar-text;
   text-align: right;
+}
+
+.float-right{
+  float: right;
 }
