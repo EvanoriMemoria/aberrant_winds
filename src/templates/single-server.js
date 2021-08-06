@@ -11,7 +11,7 @@ import {
   CardTitle,
   Button,
 } from "reactstrap"
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image"
 import authors from "../util/authors"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
@@ -33,7 +33,8 @@ const SinglePost = ({ data, pageContext }) => {
       <Card>
         <GatsbyImage
           image={post.image.childImageSharp.gatsbyImageData}
-          className="card-image-top" />
+          className="card-image-top"
+        />
         <CardBody>
           {post.subtype === "resource" && (
             <CardTitle>
@@ -144,36 +145,41 @@ const SinglePost = ({ data, pageContext }) => {
         </ul>
       </div>
     </Layout>
-  );
+  )
 }
 
-export const postQuery = graphql`query serverPostBySlug($slug: String!, $imageUrl: String!) {
-  markdownRemark(fields: {slug: {eq: $slug}}) {
-    id
-    html
-    frontmatter {
-      title
-      author
-      date(formatString: "MMM Do YYYY")
-      address
-      status
-      subtype
-      creator
-      publicity
-      modsDownload
-      image {
-        childImageSharp {
-          gatsbyImageData(width: 700, layout: CONSTRAINED)
+export const postQuery = graphql`
+  query serverPostBySlug($slug: String!, $imageUrl: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      id
+      html
+      frontmatter {
+        title
+        author
+        date(formatString: "MMM Do YYYY")
+        address
+        status
+        subtype
+        creator
+        publicity
+        modsDownload
+        image {
+          childImageSharp {
+            gatsbyImageData(
+              width: 800
+              layout: CONSTRAINED
+              placeholder: BLURRED
+            )
+          }
         }
       }
     }
-  }
-  file(relativePath: {eq: $imageUrl}) {
-    childImageSharp {
-      gatsbyImageData(width: 300, layout: CONSTRAINED)
+    file(relativePath: { eq: $imageUrl }) {
+      childImageSharp {
+        gatsbyImageData(height: 450, layout: CONSTRAINED)
+      }
     }
   }
-}
 `
 
 export default SinglePost

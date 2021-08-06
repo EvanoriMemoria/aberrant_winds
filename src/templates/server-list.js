@@ -56,7 +56,11 @@ export const serverListQuery = graphql`query serverListQuery($skip: Int!, $limit
           tags
           image {
             childImageSharp {
-              gatsbyImageData(width: 650, layout: CONSTRAINED)
+              gatsbyImageData(
+                width: 650
+                layout: CONSTRAINED
+                placeholder: BLURRED
+              )
             }
           }
         }
