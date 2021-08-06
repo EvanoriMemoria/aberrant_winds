@@ -7,7 +7,7 @@ const Server = ({ title, slug, body, status, fluid }) => {
   return (
     <Card className="server-list">
       <Link to={`/${slug}`}>
-        <GatsbyImage image={fluid} loading="eager" className="card-image-top" />
+        <GatsbyImage image={fluid} loading="eager" />
       </Link>
       <CardBody>
         <CardTitle>

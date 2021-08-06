@@ -58,8 +58,6 @@ export const serverListQuery = graphql`query serverListQuery($skip: Int!, $limit
             childImageSharp {
               gatsbyImageData(
                 width: 650
-                layout: CONSTRAINED
-                placeholder: BLURRED
               )
             }
           }

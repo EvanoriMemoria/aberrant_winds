@@ -168,7 +168,6 @@ export const postQuery = graphql`
             gatsbyImageData(
               width: 800
               layout: CONSTRAINED
-              placeholder: BLURRED
             )
           }
         }
