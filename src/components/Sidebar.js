@@ -1,10 +1,11 @@
 import React from "react"
 import { Card, CardTitle, CardBody, CardText } from "reactstrap"
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Helmet from "react-helmet"
 import bedtime from "../images/bedtime.jpeg"
 import puppy from "../images/puppy.jpg"
+import lexkrow from "../images/lex-krow.jpg"
 
 const Sidebar = ({ author, authorFluid }) => (
   <div>
@@ -111,6 +112,30 @@ const Sidebar = ({ author, authorFluid }) => (
           <img
             src={bedtime}
             alt="BeanSproutIllustrations"
+            style={{ width: "100%" }}
+          />
+        </a>
+      </CardBody>
+    </Card>
+    <Card>
+      <CardBody>
+        <CardTitle className="text-center">
+          <a
+            href="https://www.lexkrow.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Lex Krow Stories and Tellings
+          </a>
+        </CardTitle>
+        <a
+          href="https://www.lexkrow.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={lexkrow}
+            alt="lexkrow Logo"
             style={{ width: "100%" }}
           />
         </a>
