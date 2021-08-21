@@ -14,7 +14,7 @@ const Sidebar = ({ author, authorFluid }) => (
     </Helmet>
     {author && (
       <Card>
-        <GatsbyImage image={authorFluid} className="card-image-top" />
+        <GatsbyImage image={authorFluid} alt={author.name} />
         <CardBody>
           <CardTitle className="text-center text-uppercase mb-3">
             {author.name}
@@ -133,11 +133,7 @@ const Sidebar = ({ author, authorFluid }) => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src={lexkrow}
-            alt="lexkrow Logo"
-            style={{ width: "100%" }}
-          />
+          <img src={lexkrow} alt="lexkrow Logo" style={{ width: "100%" }} />
         </a>
       </CardBody>
     </Card>
