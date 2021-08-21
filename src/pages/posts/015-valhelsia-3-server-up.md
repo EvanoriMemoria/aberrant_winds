@@ -1,5 +1,5 @@
 ---
-title: 'Velhelsia 3 Server Released'
+title: 'Valhelsia 3 Server Released'
 date: 2021-08-01
 author: 'fergenbergel'
 type: 'post'
@@ -24,3 +24,5 @@ Helpful update references:
 [Valhelsia 3][1]
 
 [1]: <https://www.curseforge.com/minecraft/modpacks/valhelsia-3/> "Valhelsia 3 curseforge page"
+
+EDIT 2021-08-20: Corrected Spelling Issue in title.
