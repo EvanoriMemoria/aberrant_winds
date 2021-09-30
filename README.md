@@ -1,4 +1,16 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+<p align="center">
+  <a href="https://www.gatsbyjs.com">
+    <img alt="Aberrant Winds Logo" src="src/images/aberrant_winds.png" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Aberrant Winds' Official Website
+</h1>
+
+This is the full Aberrant Winds website I've been working on in my free time for a couple of years now. It utilizes Gatsby, built on React, to create a static website.
+
+
+<!-- AUTO-GENERATED-CONTENT:START (STARTER)
 <p align="center">
   <a href="https://www.gatsbyjs.com">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
@@ -96,4 +108,4 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+AUTO-GENERATED-CONTENT:END -->

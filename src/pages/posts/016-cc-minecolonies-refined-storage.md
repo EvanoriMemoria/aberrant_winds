@@ -11,6 +11,8 @@ tags:
  - lua
 ---
 
+## Outdated as of update 3.4.2
+
 Take a look at the source code here: [Program Pastebin][1]
 
 This is a program for ComputerCraft which enables integration between your Minecolony and your Refined Storage system. This program uses a list of your builder huts to find the items they need for their current project, find and output those items from your Refined Storage and craft them using patterns in your system if you do not have enough in storage. 
