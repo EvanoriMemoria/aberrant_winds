@@ -1,5 +1,5 @@
 ---
-title: 'Valhelsia 3 Server Update 3.4.2'
+title: 'Valhelsia 3 Server Update 3.4.4'
 date: 2021-10-20
 author: 'fergenbergel'
 type: 'post'
