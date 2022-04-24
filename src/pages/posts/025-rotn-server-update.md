@@ -1,6 +1,6 @@
 ---
 title: 'Rebirth of the Night Server Update to 3.0.1'
-date: 2022-04-07
+date: 2022-04-09
 author: 'fergenbergel'
 type: 'post'
 tags: 
