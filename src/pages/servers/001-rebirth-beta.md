@@ -2,10 +2,10 @@
 title: 'Rebirth of the Night Beta Branch'
 date: 2020-02-26
 author: 'fergenbergel'
-creator: 'CalaMariGold et al.'
+creator: 'SandwichHorror et al.'
 type: 'server'
 subtype: 'gaming'
-status: 'Active'
+status: 'Inactive'
 publicity: 'Public'
 image: '../../images/rotn-logo-beta.png'
 address: 'rotnbeta.aberrantwinds.xyz'

@@ -2,7 +2,7 @@
 title: 'Rebirth of the Night'
 date: 2020-02-26
 author: 'fergenbergel'
-creator: 'CalaMariGold et al.'
+creator: 'SandwichHorror et al.'
 type: 'server'
 subtype: 'gaming'
 status: 'Active'
