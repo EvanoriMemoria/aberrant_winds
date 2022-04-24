@@ -13,7 +13,7 @@ const Footer = () => (
       <CardBody>
         <CardTitle>
         <a
-            href="https://discord.gg/8jBA5dafAG"
+            href="https://discord.gg/Yq7n97f"
             target="_blank"
             rel="noopener noreferrer"
             className="discord"
@@ -24,7 +24,7 @@ const Footer = () => (
         <Form className="text-center">
           <button className="btn text-uppercase join-discord">
             <a
-              href="https://discord.gg/8jBA5dafAG"
+              href="https://discord.gg/Yq7n97f"
               target="_blank"
               rel="noopener noreferrer"
             >

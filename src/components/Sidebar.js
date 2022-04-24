@@ -71,7 +71,7 @@ const Sidebar = ({ author, authorFluid }) => (
       <CardBody>
         <CardTitle className="text-center text-uppercase mb-3">
           <a
-            href="https://discord.gg/8jBA5dafAG"
+            href="https://discord.gg/Yq7n97f"
             target="_blank"
             rel="noopener noreferrer"
             className="discord"
@@ -82,7 +82,7 @@ const Sidebar = ({ author, authorFluid }) => (
         <div className="text-center">
           <button className="btn text-uppercase join-discord">
             <a
-              href="https://discord.gg/8jBA5dafAG"
+              href="https://discord.gg/Yq7n97f"
               target="_blank"
               rel="noopener noreferrer"
             >
