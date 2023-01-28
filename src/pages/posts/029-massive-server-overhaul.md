@@ -10,51 +10,69 @@ tags:
  - maintenance
 ---
 
-# Server Hardware Changes
+## Preface: Community Input
 
+I have always intended for the members of this community to have a say in what happens with the servers. This can be seen in the world reset votes we hold for wiping servers and in many more ways throughout this document. Now, I know this is a pretty big set of changes, and I want to have your input going forward. So, if you have an opinion, thoughts, ideas, constructive criticism, etc. I would love to hear it and have a discussion over on our discord. This will be restated quite a few times throughout this document. **Let me hear your thoughts! They ___will___ have an impact on the future of Aberrant Winds.**
 
-Aberrant Winds is undergoing some large, and hopefully beneficial, changes.
+## Server Hardware Changes
+Aberrant Winds is undergoing some big changes.
 
+First off, I'm restructuring the two machines I currently have running servers to use [ProxMox][1], a virtual environment which should allow for faster, smoother, more modular, and safer server setup. Additionally, I'm setting up a third machine which will host a RAID array for server backups, which is fully supported through ProxMox and should keep our backups extra safe.
 
-First off, I'm restructuring the two machines I currently have running servers to use [ProxMox][1], a virtual environment that will hopefully allow for faster, smoother, more modular, and safer server setup. Additionally, I'm setting up a third machine which will host a RAID setup for server backups, which is fully supported through ProxMox and should keep our backups safe in the event of a hard drive failure on the main machines.
+## Timeframe
+Unfortunately this will not be a quick transition, it may take a few weeks to get everything up and running again. Though, I suspect we'll be playing before the next ROTN update :P.
 
+#### **** Worlds will not be wiped!* ****
+*Barring sad, unforeseen issues.
 
-Unfortunately this will not be a quick transition, it may take a few weeks to get everything up and running again. I have limited time to work on projects and I will have to learn quite a lot to get all of this set up and the servers running again. Though, I suspect we'll be running again before the next ROTN update :P.
-
-
-**Worlds will not be wiped!***
-
-
-*Baring unfortunate/unforeseen issues.
-
-
-# Server Monetization Changes
-
-
-As you should all know, up to this point I've been doing all of this for free. I wish I could continue to do so, but it is just not feasible anymore in the world we live in and my living situation. I'll be honest, I feel a little dirty asking you guys for money, so hopefully I can make the servers worth it.
-
+## Server Monetization Changes
+Up to this point I've been hosting these servers for free. I wish I could continue to do so, but it is just not feasible anymore for me to continue this way. I will be updating the ko-fi with goals for additional upgrades to the servers, or additional servers. I will continue to add these as we complete the current ones so everyone can see what sorts of upgrades we are currently working toward. I want this to be a community where everyone has some input, so to that end I have outlined my starting ideas. If anyone has additional input, let me know.
 
 Here's what I'm thinking:
 
+I have set up a Ko-fi (like Patreon, but more creator friendly). It has both a single donation option (You choose the amount) and a subscription option ($5.00/month). Every two-three months we will hold a community vote for the next server to set up and run. Everyone that has donated that month, (single donation or subscription, at least $5.00) will get to add a game to the pool to be voted on. Then, these same donors will vote to find the top three games from the pool. From there we’ll do one more vote to find the final game for the month and I’ll do my best to set up a server for it, granted it’s possible given our limitations (linux compatible, resources, etc.). In order to play on the fresh server for launch you will need to be a donor that month.
 
-I have set up a [Ko-fi][2] (like Patreon, but more creator friendly). It has both a single donation option (You choose the amount) and a subscription option ($5.00/month). Every two or three months we will hold a vote for the next server to run and everyone that has donated that month, (single donation or subscription, at least $5.00) will get to add a game to the pool to be voted on. We will vote on the top three from the pool, then I will pick from those which one to host until the next vote comes around. Now for a few caveats.
+#### **** At least the first two game setup months will be free for everyone ****
 
+This will allow us to work out some of the kinks and see what works without anyone worrying about the monetary side.
 
-First off, I have very limited server host room, so we cannot feasible run many of these servers at the same time. This means that at the end of every 2-3 month game session we will be shutting off the current server in favour of the next game. Now, at the end of the year we will have another vote to decide on one of the servers to boot back up and  keep running for the foreseeable future. I know that some people may lose interest since the servers will be shut down in a rather short amount of time, however, I plan to upload every map/world/save for the games that allow it to the Aberrant Winds cloud storage for download by anyone who wishes to do so. Hopefully this will offset the "everything will be gone so what's the point" mentality that we all fall prey to now and then. On top of that, I'm hoping the launch parties will be fun/entertaining/chaotic enough that people will want to continue coming back to participate for the foreseeable future.
+## Game Vote Setup
 
+One of the limitations of this system is our limited server resources, so we cannot feasibly run many of these servers at the same time. While this should improve with time, for now this means that at the end of every 2-3 month game session we will be shutting off the current server in favour of the next game. Now, at the end of the year we will have another vote to decide on one of the servers to boot back up and keep running for the foreseeable future. I know that some people may lose interest since the servers will be shut down in a finite amount of time, however, I plan to upload every map/world/save (for the games that allow it) to the Aberrant Winds cloud storage for download by anyone who wishes to do so. Hopefully this will offset the "everything will be gone so what's the point" mentality that we all fall prey to now and then. On top of that, I'm hoping the launch parties will be fun/entertaining/chaotic enough that people will want to continue coming back to participate for the foreseeable future. If you’ve played Path of Exile, I’m going for a league launch vibe; exciting, anticipation building, communal, and fun!
 
-One other potential issue that was brought to my attention is that not everyone will want to play every game and not everyone will be able to play every game. Unfortunately this is a reality of life, try as I may I am simply unable to accommodate everybody. Some people will be unable to purchase the games for launch, some will have little interest in the game, some might just be busy, somebody’s power might be out for the launch. There are a lot of things that can happen, but my intention is to keep this community fun, engaging, comfortable, and safe for as many people as I can.
+Now, I know that not everybody will want to play every game, nor be able to play even if one wishes to. Unfortunately this is a reality of life, try as I may I am simply unable to accommodate everybody. Some people will be unable to purchase the games for launch, some will have little interest in the game, some might be busy, another might lose power/internet. There are a lot of things that can happen, but my intention is to keep this community fun, engaging, comfortable, and safe for as many people as I can. Below are some of the steps I would like to take toward this goal. If you have additional thoughts on how to make this more engaging, fun, or accommodating, let's talk about it in our discord!
 
+### Streaming
+Starting up a stream and potentially partnering with other streamers for the launches. Ideally this will allow those who are unable to play themselves to still participate in some manner.
 
-With these issues in mind, I’ve been toying with the notion of starting to stream (probably on twitch, though I’ll be looking into alternatives as well). Ideally this will allow those without the capability/desire to play the games to watch and participate through the stream.
+### Giveaways
+While I do not currently have the funds for any giveaways, I would love to eventually give out as many copies of the game we will be playing that month as possible to those watching the stream, with donations not required to win. Those who win will also get free entry into the launch. I hope to contact developers to potentially source copies of their game, but we'll probably need to be more established for this to work very often.
 
+### In-game Challenges / Races
+This one greatly depends on the game, but people have had fun getting the dragon armour in ROTN as fast as they can. I can imagine it being fun to have goals people meet, both race-like (first to X) or more static (Beat a boss/have a set of gear/kill xxx monsters solo or as a group) over the course of the game instance’s life. We should discuss prizes for completion as well as challenges in the discord as well, let’s hear your ideas. Participation will be completely optional of course.
 
-All of this is a test, I have no idea how it will turn out. Hopefully we can all have a good time and enjoy the experiences of playing some games together and potentially growing our little community outside of just minecraft and ROTN to something more.
+## Private Servers
+I will be hosting some private servers for any applicable game, in addition to the above changes. These will not come at the expense of the public servers, but will run alongside them. I currently have them priced at $30/month. I will set them up, host them, and those paying for them will get to play on the server with the permissions of their choosing (admin, operator, nothing) and a whitelist for only those they wish to play with. I can potentially support mods, but this heavily depends on the game being hosted. I hope this will generate some additional income to continue growing the community, and perhaps start some advertising. Our limited server resources mean I can only host a couple of these, for the moment that limit is 2, so if you'd like to have a private server hosted by me, head over to the [Ko-fi][2].
 
+## Final Thoughts
+All of this is a big test, I have no idea how it will turn out. Hopefully we can all have a good time and enjoy the experiences of playing some games together and potentially growing our little community outside of just minecraft and ROTN to something more. I look forward to this adventure with you guys!
 
-With all of that out of the way, I will be hosting at least the first two of these events for free for everyone who would like to participate, so bring your friends!
+## QA
+-   **How much will it cost to participate in the server launches?**
+    $5 per month you wish to play.
+
+-   **What kinds of games will work for this?**
+    Valheim, Project Zomboid, Rust, Ark: Survival Evolved, Minecraft (and modpacks), Satisfactory, Path of Titans, Terraria, 7 Days to Die, Lego Universe, etc. [Here’s a list][3] of just the ones on steam, make sure you look at the linux section. 
+
+-   **What about the currently active servers?**
+    We will be keeping some of the current servers up, whichever ones continue to have interest. I may make two versions, one free and one private for donors, I haven’t decided yet, again I'll need some input from you guys on this. ROTN will be staying as it was the foundation of our community, as much of a mess as it is. It is likely EOI will be making a comeback, otherwise I’m not sure about the rest. If you want to see a specific one stay, message me on discord.
+
+-   **What about the people who have been here forever? Do we still have to pay?**
+    My intuition says no, only pay if you have the means/want to support the server. I think I may have a time limit on this, such that anyone who participates in the coming months will have a free pass, at least for a while. While those who arrive later / return later, will not get the same benefits. Let me know what you think on this too.
+
 
 
 
 [1]: <https://www.proxmox.com/en/> "ProxMox"
 [2]: <https://ko-fi.com/aberrantwinds> "Aberrant Winds' Ko-fi"
+[3]: <https://developer.valvesoftware.com/wiki/Dedicated_Servers_List> "Valve Dedicated Server List"
