@@ -10,6 +10,7 @@ publicity: 'Public'
 image: '../../images/minecraft-logo.png'
 address: 'vanilla.aberrantwinds.xyz'
 modsDownload: 'https://www.minecraft.net/en-us/about-minecraft'
+seasonal: 'false'
 tags:
  - Server
 ---

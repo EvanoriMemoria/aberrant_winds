@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Helmet from "react-helmet"
 import bedtime from "../images/bedtime.jpeg"
 import puppy from "../images/puppy.jpg"
-import lexkrow from "../images/lex-krow.jpg"
+import leeriebard from "../images/leerie-bard-logo.jpg"
 
 const Sidebar = ({ author, authorFluid }) => (
   <div>
@@ -80,16 +80,16 @@ const Sidebar = ({ author, authorFluid }) => (
           </a>
         </CardTitle>
         <div className="text-center">
-          <button className="btn text-uppercase join-discord">
-            <a
-              href="https://discord.gg/Yq7n97f"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {" "}
-              Join the Discord!{" "}
-            </a>
-          </button>
+          <a
+            href="https://discord.gg/Yq7n97f"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="btn text-uppercase join-discord">
+                {" "}
+                Join the Discord!{" "}
+            </button>
+          </a>
         </div>
       </CardBody>
     </Card>
@@ -121,39 +121,19 @@ const Sidebar = ({ author, authorFluid }) => (
       <CardBody>
         <CardTitle className="text-center">
           <a
-            href="https://www.lexkrow.com/"
+            href="https://www.leeriebard.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Lex Krow Stories and Tellings
+            Leerie Bard Stories and Tellings
           </a>
         </CardTitle>
         <a
-          href="https://www.lexkrow.com/"
+          href="https://www.leeriebard.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={lexkrow} alt="lexkrow Logo" style={{ width: "100%" }} />
-        </a>
-      </CardBody>
-    </Card>
-    <Card>
-      <CardBody>
-        <CardTitle className="text-center">
-          <a
-            href="https://www.instagram.com/alex.rust.art/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Alex's Realism Art
-          </a>
-        </CardTitle>
-        <a
-          href="https://www.instagram.com/alex.rust.art/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={puppy} alt="Alex's Instagram" style={{ width: "100%" }} />
+          <img src={leeriebard} alt="Leerie Bard Logo" style={{ width: "100%" }} />
         </a>
       </CardBody>
     </Card>

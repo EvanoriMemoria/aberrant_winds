@@ -5,11 +5,12 @@ author: 'fergenbergel'
 creator: 'Capio13'
 type: 'server'
 subtype: 'gaming'
-status: 'Active'
+status: 'Inactive'
 publicity: 'Public'
 image: '../../images/edge-of-infinity-logo.png'
 address: 'eoi.aberrantwinds.xyz'
 modsDownload: 'https://www.curseforge.com/minecraft/modpacks/edge-of-infinity'
+seasonal: 'false'
 tags:
  - Server
 ---

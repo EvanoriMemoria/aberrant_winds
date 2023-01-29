@@ -10,6 +10,7 @@ publicity: 'Public'
 image: '../../images/minecraft-logo-snapshot.png'
 address: 'snapshot.aberrantwinds.xyz'
 modsDownload: 'https://feedback.minecraft.net/hc/en-us/sections/360002267532-Snapshot-Information-and-Changelogs'
+seasonal: 'false'
 tags:
  - Server
 ---

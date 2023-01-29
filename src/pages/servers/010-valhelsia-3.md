@@ -5,11 +5,12 @@ author: 'fergenbergel'
 creator: 'Valhelsia Team'
 type: 'server'
 subtype: 'gaming'
-status: 'Active'
+status: 'Inactive'
 publicity: 'Whitelisted'
 image: '../../images/valhelsia.png'
 address: 'valhelsia.aberrantwinds.xyz'
 modsDownload: 'https://www.curseforge.com/minecraft/modpacks/valhelsia-3'
+seasonal: 'true'
 tags:
  - Server
 ---

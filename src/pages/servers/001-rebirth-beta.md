@@ -10,6 +10,7 @@ publicity: 'Public'
 image: '../../images/rotn-logo-beta.png'
 address: 'rotnbeta.aberrantwinds.xyz'
 modsDownload: 'https://www.curseforge.com/minecraft/modpacks/rebirth-of-the-night/files'
+seasonal: 'false'
 tags:
  - Server
 ---

@@ -10,6 +10,7 @@ publicity: 'Private'
 image: '../../images/logo-valheim.png'
 address: 'Aberrant Winds'
 modsDownload: 'https://store.steampowered.com/app/892970/Valheim/'
+seasonal: 'false'
 tags:
  - Server
 ---

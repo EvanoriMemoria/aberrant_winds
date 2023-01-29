@@ -10,6 +10,7 @@ publicity: 'Public'
 image: '../../images/rebirth-bpg.png'
 address: 'rotnbpg.aberrantwinds.xyz'
 modsDownload: 'https://www.curseforge.com/minecraft/modpacks/rotn-bpg-edition'
+seasonal: 'false'
 tags:
  - Server
 ---

@@ -10,6 +10,7 @@ publicity: 'Public'
 image: '../../images/cipher.png'
 address: 'cipher.aberrantwinds.xyz'
 modsDownload: 'https://www.curseforge.com/minecraft/modpacks/cipher-era-of-magic'
+seasonal: 'false'
 tags:
  - Server
 ---

@@ -7,7 +7,7 @@ import { Row, Col } from "reactstrap"
 import PaginationLinks from "../components/PaginationLinks"
 
 const IndexPage = () => {
-  const serversPerPage = 6
+  const serversPerPage = 5
   let numberOfPages
 
   return (
@@ -21,9 +21,11 @@ const IndexPage = () => {
           )
           return (
             <div>
-              <Row>
+              <Row className="justify-content-md-center">
                 {data.allMarkdownRemark.edges.map(({ node }) => (
-                  <Col md="6">
+                  <Col
+                    md={node.frontmatter.seasonal === "true" ? "12" : "6"}
+                  >
                     <Server
                       key={node.id}
                       title={node.frontmatter.title}
@@ -31,7 +33,10 @@ const IndexPage = () => {
                       slug={node.fields.slug}
                       date={node.frontmatter.date}
                       body={node.excerpt}
-                      fluid={node.frontmatter.image.childImageSharp.gatsbyImageData}
+                      seasonal={node.frontmatter.seasonal}
+                      fluid={
+                        node.frontmatter.image.childImageSharp.gatsbyImageData
+                      }
                       status={node.frontmatter.status}
                     />
                   </Col>
@@ -44,45 +49,48 @@ const IndexPage = () => {
                 homePage="/"
               />
             </div>
-          );
+          )
         }}
       />
     </Layout>
-  );
+  )
 }
-const indexQuery = graphql`{
-  allMarkdownRemark(
-    sort: {fields: [frontmatter___status, frontmatter___title], order: [ASC, ASC]}
-    limit: 6
-    filter: {frontmatter: {type: {eq: "server"}}}
-  ) {
-    totalCount
-    edges {
-      node {
-        id
-        frontmatter {
-          title
-          date(formatString: "MMM Do YYYY")
-          author
-          type
-          status
-          tags
-          image {
-            childImageSharp {
-              gatsbyImageData(
-                width: 600
-              )
+const indexQuery = graphql`
+  {
+    allMarkdownRemark(
+      sort: {
+        fields: [frontmatter___status, frontmatter___title]
+        order: [ASC, ASC]
+      }
+      limit: 5
+      filter: { frontmatter: { type: { eq: "server" } } }
+    ) {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "MMM Do YYYY")
+            author
+            type
+            status
+            tags
+            seasonal
+            image {
+              childImageSharp {
+                gatsbyImageData(width: 600)
+              }
             }
           }
+          fields {
+            slug
+          }
+          excerpt
         }
-        fields {
-          slug
-        }
-        excerpt
       }
     }
   }
-}
 `
 
 export default IndexPage

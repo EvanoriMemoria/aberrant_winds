@@ -10,6 +10,7 @@ publicity: 'Private'
 image: '../../images/NextCloudLogo.png'
 address: 'https://cloud.aberrantwinds.xyz'
 modsDownload: 'https://cloud.aberrantwinds.xyz'
+seasonal: 'true'
 tags:
  - Server
 ---
