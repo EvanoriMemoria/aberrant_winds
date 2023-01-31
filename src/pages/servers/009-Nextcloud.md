@@ -8,9 +8,9 @@ subtype: 'resource'
 status: 'Active'
 publicity: 'Private'
 image: '../../images/NextCloudLogo.png'
-address: 'https://cloud.aberrantwinds.xyz'
-modsDownload: 'https://cloud.aberrantwinds.xyz'
-seasonal: 'true'
+address: 'https://aberrantwinds.cloud'
+modsDownload: 'https://aberrantwinds.cloud'
+seasonal: 'false'
 tags:
  - Server
 ---

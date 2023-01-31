@@ -17,7 +17,7 @@ const IndexPage = () => {
         query={indexQuery}
         render={data => {
           numberOfPages = Math.ceil(
-            data.allMarkdownRemark.totalCount / serversPerPage
+            data.allMarkdownRemark.totalCount / (serversPerPage + 1)
           )
           return (
             <div>

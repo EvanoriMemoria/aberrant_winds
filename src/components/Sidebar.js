@@ -4,7 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Helmet from "react-helmet"
 import bedtime from "../images/bedtime.jpeg"
-import puppy from "../images/puppy.jpg"
+import aberrantwindslogo from "../images/aberrant_winds.png"
 import leeriebard from "../images/leerie-bard-logo.jpg"
 
 const Sidebar = ({ author, authorFluid }) => (
@@ -86,11 +86,35 @@ const Sidebar = ({ author, authorFluid }) => (
             rel="noopener noreferrer"
           >
             <button className="btn text-uppercase join-discord">
-                {" "}
-                Join the Discord!{" "}
+              {" "}
+              Join the Discord!{" "}
             </button>
           </a>
         </div>
+      </CardBody>
+    </Card>
+    <Card>
+      <CardBody>
+        <CardTitle className="text-center">
+          <a
+            href="https://ko-fi.com/aberrantwinds"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Join the Aberrant Winds Ko-fi
+          </a>
+        </CardTitle>
+        <a
+          href="https://ko-fi.com/aberrantwinds"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={aberrantwindslogo}
+            alt="Aberrant Winds Logo"
+            style={{ width: "100%" }}
+          />
+        </a>
       </CardBody>
     </Card>
     <Card>
@@ -133,7 +157,11 @@ const Sidebar = ({ author, authorFluid }) => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={leeriebard} alt="Leerie Bard Logo" style={{ width: "100%" }} />
+          <img
+            src={leeriebard}
+            alt="Leerie Bard Logo"
+            style={{ width: "100%" }}
+          />
         </a>
       </CardBody>
     </Card>
