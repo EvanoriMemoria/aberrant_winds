@@ -26,12 +26,11 @@ Machine restructure is complete. They are back up and running!
 ~~\## Timeframe~~
 ~~Unfortunately this will not be a quick transition, it may take a few weeks to get everything up and running again. Though, I suspect we'll be playing before the next ROTN update :P.~~ **EDIT** Only 6 days of downtime!
 
-~~\#### **** Worlds will not be wiped!* ****~~ **Worlds are safe!**
-~~*Barring sad, unforeseen issues.~~
+#### **Worlds were not wiped!**
 
 ## Server Monetization Changes
 
-Up to this point I've been hosting these servers for free. I wish I could continue to do so, but it is just not feasible anymore for me to continue this way. I will be updating the ko-fi with goals for additional upgrades to the servers, or additional servers. I will continue to add these as we complete the current ones so everyone can see what sorts of upgrades we are currently working toward. I want this to be a community where everyone has some input, so to that end I have outlined my starting ideas. If anyone has additional input, let me know.
+For the last two years I've been hosting these servers for free. I wish I could continue to do so, but it is just not feasible anymore for me to continue this way. I will be updating the ko-fi with goals for additional upgrades to the servers, or additional servers. I will continue to add these as we complete the current ones so everyone can see what sorts of upgrades we are currently working toward. I want this to be a community where everyone has some input, so to that end I have outlined my starting ideas. If anyone has additional input, let me know.
 
 Here's what I'm thinking:
 
