@@ -21,7 +21,7 @@ exports.createPages = ({ actions, graphql }) => {
 
   let numberOfServers = 0
   let numberOfPosts = 0
-
+  
   const templates = {
     singleServer: path.resolve("src/templates/single-server.js"),
     tagsPage: path.resolve("src/templates/tags-page.js"),
@@ -112,7 +112,7 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
 
-    const postsPerPage = 4
+    const postsPerPage = 6
     const numberOfPages = Math.ceil(
       (posts.length - numberOfServers) / postsPerPage
     )
@@ -151,7 +151,7 @@ exports.createPages = ({ actions, graphql }) => {
         component: templates.serverList,
         context: {
           limit: serversPerPage,
-          skip: serverIndex * serversPerPage,
+          skip: (serverIndex * serversPerPage) - 1,
           serverCurrentPage,
           numberOfServerPages,
         },

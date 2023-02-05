@@ -6,7 +6,7 @@ import Post from "../components/Post"
 import PaginationLinks from "../components/PaginationLinks"
 
 const newsPage = () => {
-  const postsPerPage = 4
+  const postsPerPage = 6
   let numberOfPages
 
   return (
@@ -50,7 +50,7 @@ const indexQuery = graphql`
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { type: { eq: "post" } } }
-      limit: 4
+      limit: 6
     ) {
       totalCount
       edges {
