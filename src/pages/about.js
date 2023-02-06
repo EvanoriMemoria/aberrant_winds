@@ -35,9 +35,9 @@ const AboutPage = () => (
           that you already have a community built in. So you don't need to worry
           about finding new people or new friends to play with. There will be
           both new and old faces, new teams and rivalries, new gaming
-          experiences, and new mega-builds. Over time community favorite will be
-          revisited and maybe even become a permanent addition to our server
-          pool.
+          experiences, and new mega-builds. Over time community favorites will
+          be revisited and maybe even become a permanent addition to our
+          dedicated server pool.
         </p>
       </CardBody>
     </Card>
@@ -47,9 +47,9 @@ const AboutPage = () => (
           <h2>Advertisements</h2>
         </CardTitle>
         <p>
-          Advertisements to the right are solely to support creators I
-          appreciate. I do not get any revenue from these links! Head to their
-          websites/social media and check them out!
+          Advertisements are solely to support creators I appreciate. I do not
+          get any revenue from these links! Head to their websites/social media
+          and check them out!
         </p>
       </CardBody>
     </Card>
