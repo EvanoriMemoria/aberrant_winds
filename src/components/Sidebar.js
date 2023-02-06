@@ -4,7 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Helmet from "react-helmet"
 import bedtime from "../images/bedtime.jpeg"
-import aberrantwindslogo from "../images/aberrant_winds.png"
+import aberrantwindslogo from "../images/kofi_button_blue.webp"
 import leeriebard from "../images/leerie-bard-logo.jpg"
 
 const Sidebar = ({ author, authorFluid }) => (
@@ -95,15 +95,6 @@ const Sidebar = ({ author, authorFluid }) => (
     </Card>
     <Card>
       <CardBody>
-        <CardTitle className="text-center">
-          <a
-            href="https://ko-fi.com/aberrantwinds"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Join the Aberrant Winds Ko-fi
-          </a>
-        </CardTitle>
         <a
           href="https://ko-fi.com/aberrantwinds"
           target="_blank"
