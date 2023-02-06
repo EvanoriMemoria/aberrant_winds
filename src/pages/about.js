@@ -22,43 +22,34 @@ const AboutPage = () => (
     <Card>
       <CardBody>
         <CardTitle>
-          <h2>Advertisements</h2>
+          <h2>Overview</h2>
         </CardTitle>
         <p>
-          Advertisements to the right are solely to support creators I appreciate. I do not get any revenue from these links!
-          Head to their websites/social media and check them out!
+          Aberrant Winds is and has been a community full of fantastic people
+          who have bonded over our love of games. My goal is to add a little
+          extra spice into the mix, with your help of course. The vision is to
+          create a community and space where players can all band together and
+          enjoy starting and playing through games together, as well as
+          reminisce on old ones. Every several months we will vote to create a
+          new server to be hosted on a game of your choice. The best part is
+          that you already have a community built in. So you don't need to worry
+          about finding new people or new friends to play with. There will be
+          both new and old faces, new teams and rivalries, new gaming
+          experiences, and new mega-builds. Over time community favorite will be
+          revisited and maybe even become a permanent addition to our server
+          pool.
         </p>
       </CardBody>
     </Card>
     <Card>
       <CardBody>
         <CardTitle>
-          <h2>Hardware</h2>
+          <h2>Advertisements</h2>
         </CardTitle>
-        <h4>Server 1</h4>
         <p>
-          <b>OS:</b> Debian <br />
-          <b>CPU:</b> Ryzen 5 3600 <br />
-          <b>Motherboard:</b> MSI MPG X570 Gaming Plus
-          <br />
-          <b>RAM:</b> 32GB DDR4 3200 MHz
-          <br />
-          <b>Storage:</b> Samsung 970 EVO SSD 500GB M22 NVMe{" "}
-        </p>
-        <h4>Server 2</h4>
-        <p>
-          <b>OS:</b> Ubuntu <br />
-          <b>CPU:</b> Ryzen 7 1800X <br />
-          <b>Motherboard:</b> X370 Taichi
-          <br />
-          <b>RAM:</b> 16GB DDR4 2134 MHz
-          <br />
-          <b>Storage:</b> BC501 Hynix NVMe 512GB SSD{" "}
-        </p>
-        <h4>Server 3</h4>
-        <p>
-          <b>OS:</b> Ubuntu Nextcloud for Raspberry Pi<br />
-          <b>System:</b> Raspberry Pi 4b 8GB <br />{" "}
+          Advertisements to the right are solely to support creators I
+          appreciate. I do not get any revenue from these links! Head to their
+          websites/social media and check them out!
         </p>
       </CardBody>
     </Card>

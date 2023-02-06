@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { Badge, Card, CardTitle, CardText, CardBody } from "reactstrap"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-const Server = ({ title, slug, body, status, fluid, seasonal }) => {
+const Server = ({ title, slug, body, status, fluid }) => {
   return (
     <Card className="server-list">
       <Link to={`/${slug}`} className="center">

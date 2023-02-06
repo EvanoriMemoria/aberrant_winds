@@ -29,7 +29,9 @@ const RulesPage = () => (
           <h2>Rules</h2>
         </CardTitle>
         <ol>
-          <li>No Racism, sexism, homophobia, prejudice, discrimination, etc.</li>
+          <li>
+            No Racism, sexism, homophobia, prejudice, discrimination, etc.
+          </li>
           <li>
             Use common sense and empathy to be kind to your fellow community
             members.
@@ -47,8 +49,8 @@ const RulesPage = () => (
         <p>
           I do not support or endorse retaliation of any kind. If you retaliate
           against another player who you believe has wronged you, you will also
-          be punished. Please use the report another player steps found below
-          instead and take a break if you must.
+          be punished as per the rules above. Please use the report another
+          player steps found below instead and take a break if you must.
         </p>
       </CardBody>
     </Card>
