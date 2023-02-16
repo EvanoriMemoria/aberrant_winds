@@ -29,7 +29,7 @@ const Header = ({ siteTitle }) => {
               <NavLink href="/news/">News</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/donors/">Donors</NavLink>
+              <NavLink href="/donors/">Supporters</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/about/">About</NavLink>

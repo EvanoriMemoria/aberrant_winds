@@ -17,4 +17,4 @@ tags:
 
 ### Voting is Open!
 
-Head on over to the discord to join in the vote for the next rotational server!
+Head on over to the discord to join in the vote for the next rotational server! Vote until Friday February 17th!
