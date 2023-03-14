@@ -26,6 +26,7 @@ This round of voting is now over and the Terraria servers are up! Join me on Thu
 | Gentle Breeze Server | Normal | Corruption | normal.aberrantwinds.xyz:7776 |
 | Chilling Wind Server | Expert | Corruption | expert.aberrantwinds.xyz:7775 |
 | Crimson Wind Server  | Expert | Crimson    | aberrantwinds.xyz:7774        |
+| Frigid Gale Server   | Master | ???        | Coming Soon!                  |
 
 <br>
 
@@ -36,14 +37,20 @@ TShock has been installed for some commands, and protections. Otherwise the serv
 Characters are saved to the servers, all gear/progression must be made on Aberrant Winds servers or it will not transfer over. This is to prevent cheesing and bringing outside gear into the fresh servers, potentially ruining the experience for others.
 
 ## Progression
-~~The Gentle Breeze server is Classic/Normal difficulty, after we unlock hardmode the Chilling Wind server will come up that is Expert difficulty. A third server called Freezing Gale of Master difficulty will come up after a specific boss has been defeated in the Expert server. All servers will be online simultaneously so you can play where you're comfortable.~~
+Servers will come online as certain benchmarks are met.
+- ~~Enter Hardmode on Gentle Breeze~~ Complete! Chilling Wind and Crimson Wind are now open!
+- Kill Plantera on Chilling Wind to unlock 
 
-Your inventory will sync between all of these servers. You can bring your gear from the Classic Server to the Expert/Master server and vice versa. 
+## Inventory
+Your inventory will sync between all Aberrant Winds servers. You can bring your gear from the Classic Server to the Expert/Master server and vice versa. 
 
+## Events
 Periodically, events will be enabled, such as Christmas and Halloween. 
 
-I will be streaming Saturday the 25th from 12 noon EST until at least 6 pm EST. There will be a Terraria game giveaway with multiple copies for those that do not have it yet. (And I have no following so your chances are very good)
+## Streaming
+I stream at 12 noon EST on Saturdays and around 8pm EST on Thursdays. Join us for some boss battles!
 
-https://twitch.tv/fergenbergel
+[https://twitch.tv/fergenbergel](https://twitch.tv/fergenbergel)
 
-I expect players to behave in a friendly manner, I will not tolerate toxicity, griefing, retaliation, etc. Punishments may range from mutes to bans.
+## Rules
+I expect players to behave in a friendly manner, I will not tolerate toxicity, griefing, retaliation, etc. Punishments may range from mutes to bans. This is a cooperative game.
