@@ -4,6 +4,8 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Helmet from "react-helmet"
 import bedtime from "../images/bedtime.jpeg"
+import sunsetmountains from "../images/sunset-mountains.jpg"
+import wintermountains from "../images/winter-mountains.jpg"
 import aberrantwindslogo from "../images/kofi_button_blue.webp"
 import leeriebard from "../images/leerie-bard-logo.jpg"
 
@@ -112,6 +114,54 @@ const Sidebar = ({ author, authorFluid }) => (
       <CardBody>
         <CardTitle className="text-center">
           <a
+            href="https://twitch.tv/fergenbergel"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            fergenbergel on Twitch
+          </a>
+        </CardTitle>
+        <a
+          href="https://twitch.tv/fergenbergel"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={wintermountains}
+            alt="fergenbergel's twitch"
+            style={{ width: "100%" }}
+          />
+        </a>
+      </CardBody>
+    </Card>
+    <Card>
+      <CardBody>
+        <CardTitle className="text-center">
+          <a
+            href="https://twitch.tv/anthemyst13"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Anthemyst on Twitch
+          </a>
+        </CardTitle>
+        <a
+          href="https://twitch.tv/anthemyst13"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={sunsetmountains}
+            alt="Anthemyst's twitch"
+            style={{ width: "100%" }}
+          />
+        </a>
+      </CardBody>
+    </Card>
+    {/*<Card>
+      <CardBody>
+        <CardTitle className="text-center">
+          <a
             href="https://www.beansproutillustrations.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -131,7 +181,7 @@ const Sidebar = ({ author, authorFluid }) => (
           />
         </a>
       </CardBody>
-    </Card>
+    </Card>*/}
     <Card>
       <CardBody>
         <CardTitle className="text-center">

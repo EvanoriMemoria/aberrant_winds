@@ -25,7 +25,7 @@ First off, I'm restructuring the two machines I currently have running servers t
 Machine restructure is complete. They are back up and running!
 
 ~~\## Timeframe~~
-~~Unfortunately this will not be a quick transition, it may take a few weeks to get everything up and running again. Though, I suspect we'll be playing before the next ROTN update :P.~~ **EDIT** Only 6 days of downtime!
+~~Unfortunately this will not be a quick transition, it may take a few weeks to get everything up and running again. Though, I suspect we'll be playing before the next ROTN update :P.~~ **EDIT** We're back up!
 
 #### **Worlds were not wiped!**
 
