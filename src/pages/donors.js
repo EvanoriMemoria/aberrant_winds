@@ -7,8 +7,8 @@ import { Card, CardBody, CardTitle } from "reactstrap"
 
 const DonorPage = () => {
   return (
-    <Layout pageTitle="Thanks to all our awesome donors!" pageId="donors">
-      <Seo title="Thanks to all our awesome donors!" />
+    <Layout pageTitle="Thanks to all our awesome supporters!" pageId="supporters">
+      <Seo title="Thanks to all our awesome supporters!" />
       <ul>
         {donators.map(donators => (
           <li key={donators} style={{ marginBottom: "10px" }}>
@@ -22,7 +22,7 @@ const DonorPage = () => {
       </ul>
       <Card>
         <CardBody className="donor-card-list">
-          <CardTitle>Get your name added here by donating!</CardTitle>
+          <CardTitle>Get your name added here by supporting us!</CardTitle>
         </CardBody>
       </Card>
     </Layout>

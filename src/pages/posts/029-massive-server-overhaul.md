@@ -1,9 +1,10 @@
 ---
-title: 'Massive Server Overhaul EDIT'
+title: 'Massive Server Overhaul'
 date: 2023-01-26
 author: 'fergenbergel'
 type: 'post'
 tags: 
+ - edited
  - post
  - update
  - status update
