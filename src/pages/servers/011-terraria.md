@@ -9,7 +9,7 @@ status: 'Active'
 publicity: 'Public'
 image: '../../images/terraria.jpg'
 address: 'normal.aberrantwinds.xyz:7776'
-modsDownload: 'https://discord.com/invite/Yq7n97f'
+modsDownload: 'https://store.steampowered.com/app/105600/Terraria/'
 seasonal: 'true'
 tags:
  - Server
