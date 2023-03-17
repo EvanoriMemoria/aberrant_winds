@@ -1,5 +1,5 @@
 ---
-title: ' Terraria Servers Open!'
+title: ' Terraria'
 date: 2023-02-06
 author: 'fergenbergel'
 creator: 'Re-Logic'

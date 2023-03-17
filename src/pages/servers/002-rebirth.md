@@ -1,5 +1,5 @@
 ---
-title: 'Rebirth of the Night'
+title: 'Rebirth of the Night Minecraft Modpack'
 date: 2020-02-26
 author: 'fergenbergel'
 creator: 'SandwichHorror et al.'

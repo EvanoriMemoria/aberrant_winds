@@ -1,5 +1,5 @@
 ---
-title: 'Valhelsia 3'
+title: 'Valhelsia 3 Minecraft Modpack'
 date: 2020-02-26
 author: 'fergenbergel'
 creator: 'Valhelsia Team'

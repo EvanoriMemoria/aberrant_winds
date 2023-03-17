@@ -1,5 +1,5 @@
 ---
-title: 'Edge of Infinity'
+title: 'Edge of Infinity Minecraft Modpack'
 date: 2020-02-26
 author: 'fergenbergel'
 creator: 'Capio13'

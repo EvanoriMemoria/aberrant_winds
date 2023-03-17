@@ -1,5 +1,5 @@
 ---
-title: 'Rebirth of the Night Beta Branch'
+title: 'Rebirth of the Night Beta Minecraft Modpack'
 date: 2020-02-26
 author: 'fergenbergel'
 creator: 'SandwichHorror et al.'

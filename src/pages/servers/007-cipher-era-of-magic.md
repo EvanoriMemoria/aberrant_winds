@@ -1,5 +1,5 @@
 ---
-title: 'Cipher: Era of Magic'
+title: 'Cipher: Era of Magic Minecraft Modpack'
 date: 2020-02-26
 author: 'fergenbergel'
 creator: 'Mattlock'

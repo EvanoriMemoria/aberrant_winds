@@ -1,5 +1,5 @@
 ---
-title: 'Aberrant Winds Nextcloud'
+title: 'Nextcloud'
 date: 2021-07-22
 author: 'fergenbergel'
 creator: 'Nextcloud Community'

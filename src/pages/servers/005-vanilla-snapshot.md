@@ -1,5 +1,5 @@
 ---
-title: 'Vanilla Snapshot'
+title: 'Vanilla Snapshot Minecraft'
 date: 2020-02-26
 author: 'fergenbergel'
 creator: 'Mojang'
