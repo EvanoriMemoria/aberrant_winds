@@ -15,4 +15,4 @@ tags:
  - Server
 ---
 
-I created this [Nextcloud](https://nextcloud.com) instance to be of use to close friends and family. It is currently running from a Raspberry Pi. This is a private service.
+A private [Nextcloud](https://nextcloud.com) instance. We have about 13TB of storage with full backups.

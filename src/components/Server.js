@@ -3,11 +3,11 @@ import { Link } from "gatsby"
 import { Badge, Card, CardTitle, CardText, CardBody } from "reactstrap"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-const Server = ({ title, slug, body, status, fluid }) => {
+const Server = ({ title, slug, body, status, alt, fluid }) => {
   return (
     <Card className="server-list">
       <Link to={`/${slug}`} className="center">
-        <GatsbyImage image={fluid} loading="eager"/>
+        <GatsbyImage alt={alt} image={fluid} loading="eager"/>
       </Link>
       <CardBody>
         <CardTitle>

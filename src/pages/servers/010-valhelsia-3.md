@@ -15,5 +15,5 @@ tags:
  - Server
 ---
 
-This is the offical Aberrant Winds' Valhelsia 3 modded minecraft server! This world is very rarely reset making for a good long-term gameplay server. Check out the [Valhelsia website](https://valhelsia.net/) for more information about the Valhelsia crew or hit the download button below for the modpack! In order to play on this server you must apply for whitelist access through our discord.
+This is the official Aberrant Winds' Valhelsia 3 modded minecraft server! This world is very rarely reset making for a good long-term gameplay server. Check out the [Valhelsia website](https://valhelsia.net/) for more information about the Valhelsia crew or hit the download button below for the modpack! In order to play on this server you must apply for whitelist access through our discord.
 

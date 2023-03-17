@@ -32,6 +32,7 @@ const SinglePost = ({ data, pageContext }) => {
       <Seo title={post.title} />
       <Card>
         <GatsbyImage
+          alt={post.image_alt}
           image={post.image.childImageSharp.gatsbyImageData}
           className="card-image-top"
         />
@@ -163,6 +164,7 @@ export const postQuery = graphql`
         creator
         publicity
         modsDownload
+        image_alt
         image {
           childImageSharp {
             gatsbyImageData(

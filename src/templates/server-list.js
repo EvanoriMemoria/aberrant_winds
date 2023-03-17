@@ -22,6 +22,7 @@ const serverList = props => {
               date={node.frontmatter.date}
               body={node.excerpt}
               status={node.frontmatter.status}
+              alt={node.frontmatter.image_alt}
               fluid={node.frontmatter.image.childImageSharp.gatsbyImageData}
             />
           </Col>
@@ -54,6 +55,7 @@ export const serverListQuery = graphql`query serverListQuery($skip: Int!, $limit
           type
           status
           tags
+          image_alt
           image {
             childImageSharp {
               gatsbyImageData(
