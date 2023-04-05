@@ -27,7 +27,7 @@ This round of voting is now over and the Terraria servers are up! Join me on Thu
 | Gentle Breeze Server | Normal | Corruption | normal.aberrantwinds.xyz:7776 |
 | Chilling Wind Server | Expert | Corruption | expert.aberrantwinds.xyz:7775 |
 | Crimson Wind Server  | Expert | Crimson    | aberrantwinds.xyz:7774        |
-| Frigid Gale Server   | Master | ???        | Coming Soon!                  |
+| Frigid Gale Server   | Master | ???        | master.aberrantwinds.xyz:7773 |
 
 <br>
 
@@ -40,7 +40,7 @@ Characters are saved to the servers, all gear/progression must be made on Aberra
 ## Progression
 Servers will come online as certain benchmarks are met.
 - ~~Enter Hardmode on Gentle Breeze~~ Complete! Chilling Wind and Crimson Wind are now open!
-- Kill Plantera on Chilling Wind to unlock 
+- ~~Kill Plantera on Chilling Wind to unlock~~ Complete!
 
 ## Inventory
 Your inventory will sync between all Aberrant Winds servers. You can bring your gear from the Classic Server to the Expert/Master server and vice versa. 
