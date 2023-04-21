@@ -31,13 +31,10 @@ const AboutPage = () => (
           create a community and space where players can all band together and
           enjoy starting and playing through games together, as well as
           reminisce on old ones. Every several months we will vote to create a
-          new server to be hosted on a game of your choice. The best part is
-          that you already have a community built in. So you don't need to worry
-          about finding new people or new friends to play with. There will be
-          both new and old faces, new teams and rivalries, new gaming
-          experiences, and new mega-builds. Over time community favorites will
-          be revisited and maybe even become a permanent addition to our
-          dedicated server pool.
+          new server to be hosted on a game of your choice. The goal is to
+          create a lively and fun community where people can relax and play
+          games in a supportive environment with a health amount of player
+          agency around the games you wish to play.
         </p>
       </CardBody>
     </Card>
