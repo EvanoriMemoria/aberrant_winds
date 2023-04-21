@@ -122,7 +122,7 @@ const Sidebar = () => (
         </a>
       </CardBody>
     </Card>
-    <Card>
+    {/*<Card>
       <CardBody>
         <CardTitle className="text-center">
           <a
@@ -145,7 +145,7 @@ const Sidebar = () => (
           />
         </a>
       </CardBody>
-    </Card>
+</Card>*/}
   </div>
 )
 
