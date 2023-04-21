@@ -16,4 +16,4 @@ tags:
  - Server
 ---
 
-A private [Nextcloud](https://nextcloud.com) instance. We have about 13TB of storage with full backups.
+This is currently a private [Nextcloud](https://nextcloud.com) instance for close friends and family. We have full backups, redundancy, perfectly fine speeds, great uptime, and infinite utility. It really went uphill when I migrated it off the raspberry pi.
