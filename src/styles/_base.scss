@@ -16,39 +16,39 @@ a {
 .badge-colors {
   background-color: rgb(38, 117, 235);
 }
-.newsHeader{
+.newsHeader {
   text-align: left;
 }
-.text-highlight{
+.text-highlight {
   color: $button-light;
 }
-.active-highlight{
+.active-highlight {
   color: $navbar-text;
   font-size: 1.1em;
   background-color: green;
 }
-.inactive-highlight{
+.inactive-highlight {
   color: $navbar-text;
   font-size: 1.1em;
   background-color: #990b0b;
 }
 
-.post-date{
+.post-date {
   text-align: right;
   float: right;
 }
 
 //discord buttons
-.join-discord{
+.join-discord {
   color: $white;
   border: 2px solid $link-color;
   font-weight: bold;
-  a{
+  a {
     color: $link-color;
   }
-  &:hover{
+  &:hover {
     background-color: $link-color;
-    a{
+    a {
       color: $navbar-text;
     }
     text-decoration: none;
@@ -62,12 +62,13 @@ h1 {
 }
 .navbar {
   background-color: $navbar-dark;
-  a{
+  a {
     color: $navbar-text;
   }
-  a:hover{
+  a:hover {
     color: $medium-gray;
   }
+
   // border-right: 1px solid rgba(0, 0, 0, 0.4);
   // border-left: 1px solid rgba(0, 0, 0, 0.4);
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
@@ -82,18 +83,18 @@ ul {
   text-align: center;
   min-height: 100%;
 }
-.hamburger-menu{
+.hamburger-menu {
   color: $navbar-text;
   background-color: $navbar-text;
   text-align: right;
 }
 
-.float-right{
+.float-right {
   float: right;
 }
-.center{
+.center {
   text-align: center;
 }
-.left-align{
+.left-align {
   text-align: left;
 }
