@@ -40,6 +40,9 @@ const Header = ({ siteTitle }) => {
             <NavItem>
               <NavLink href="https://aberrantwinds.cloud" target="_blank">Cloud</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href="https://aberrantwinds.bond" target="_blank">Mastodon</NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </div>
