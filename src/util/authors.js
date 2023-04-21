@@ -2,7 +2,7 @@ const authors = [
   {
     name: "fergenbergel",
     imageUrl: "aberrant_winds.png",
-    bio: "He believes positivity goes a long way and would love to see the world become a better place. He attempts to make some positive difference in random stranger's lives by hosting various servers and doing his best to keep a friendly environment on the internet. Help him out!",
+    bio: "I'm just trying to make the world a better place by being positive and supportive while helping people enjoy their free time online. I host all of the servers from home and run the Aberrant Winds LLC with my wife. I have grown to despise the aspects of capitalism that often lead to valuing money above all else, especially the well-being of workers and consumers. So with that in mind, I take steps to make my services as available and accessible as possible. If you have questions about setting up your own server message me on discord, I'm happy to chat.",
   },
 ]
 
