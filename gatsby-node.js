@@ -136,7 +136,7 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
 
-    const serversPerPage = 6
+    const serversPerPage = 8
     const numberOfServerPages = Math.ceil((posts.length - numberOfPosts) / serversPerPage)
 
     //Creates server list pages

@@ -22,16 +22,18 @@ const Footer = () => (
           </a>
         </CardTitle>
         <Form className="text-center">
-          <button className="btn text-uppercase join-discord">
-            <a
-              href="https://discord.gg/Yq7n97f"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+        <div className="text-center">
+          <a
+            href="https://discord.gg/Yq7n97f"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="btn text-uppercase join-discord">
               {" "}
               Join the Discord!{" "}
-            </a>
-          </button>
+            </button>
+          </a>
+        </div>
         </Form>
       </CardBody>
     </Card>

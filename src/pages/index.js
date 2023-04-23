@@ -7,7 +7,7 @@ import { Row, Col } from "reactstrap"
 import PaginationLinks from "../components/PaginationLinks"
 
 const IndexPage = () => {
-  const serversPerPage = 5
+  const serversPerPage = 7
   let numberOfPages
 
   return (
@@ -60,7 +60,7 @@ const indexQuery = graphql`
         fields: [frontmatter___status, frontmatter___title]
         order: [ASC, ASC]
       }
-      limit: 5
+      limit: 7
       filter: { frontmatter: { type: { eq: "server" } } }
     ) {
       totalCount
