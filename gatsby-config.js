@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Aberrant Winds LLC`,
     description: `Servers hosted for the Aberrant Winds community!`,
-    image: "/images/aberrant_winds.png",
+    image: "/images/aberrant-winds.png",
     author: `@fergenbergel`,
   },
   plugins: [
@@ -35,7 +35,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/aberrant_winds.png`, // This path is relative to the root of the site.
+        icon: `src/images/aberrant-winds.png`, // This path is relative to the root of the site.
       },
     },
     'gatsby-transformer-remark',
