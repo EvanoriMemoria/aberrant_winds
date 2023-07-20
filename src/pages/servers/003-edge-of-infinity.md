@@ -16,4 +16,4 @@ tags:
  - Server
 ---
 
-This is the offical Edge of Infinity modded minecraft server! This world is very rarely reset making for a good long-term gameplay server. This modpack is based around magic and adventuring featuring mods like Bewitchment, DivineRPG, Ice and Fire, MKUltra, Weather2, Botania, Thaumcraft, and many more.
+This is the official Edge of Infinity modded minecraft server! This world is very rarely reset making for a good long-term gameplay server. This modpack is based around magic and adventuring featuring mods like Bewitchment, DivineRPG, Ice and Fire, MKUltra, Weather2, Botania, Thaumcraft, and many more.
