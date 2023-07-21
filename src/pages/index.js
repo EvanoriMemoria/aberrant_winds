@@ -56,12 +56,9 @@ const IndexPage = () => {
 const indexQuery = graphql`
   {
     allMarkdownRemark(
-      sort: {
-        fields: [frontmatter___status, frontmatter___title]
-        order: [ASC, ASC]
-      }
+      sort: [{frontmatter: {status: ASC}}, {frontmatter: {title: ASC}}]
       limit: 7
-      filter: { frontmatter: { type: { eq: "server" } } }
+      filter: {frontmatter: {type: {eq: "server"}}}
     ) {
       totalCount
       edges {

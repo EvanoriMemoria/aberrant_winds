@@ -1,7 +1,8 @@
 import React from "react"
 import { Card, CardTitle, CardBody } from "reactstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import bedtime from "../images/bedtime.jpeg"
+
+//import bedtime from "../images/bedtime.jpeg"
 import sunsetmountains from "../images/sunset-mountains.jpeg"
 import wintermountains from "../images/winter-mountains.jpeg"
 import aberrantwindslogo from "../images/kofi_button_blue.webp"
