@@ -10,7 +10,7 @@ const serverList = props => {
   const { serverCurrentPage, numberOfServerPages } = props.pageContext
 
   return (
-    <Layout pageTitle={`Servers Page: ${serverCurrentPage}`}>
+    <Layout data-bs-theme="dark" pageTitle={`Servers Page: ${serverCurrentPage}`}>
       <Row>
         {posts.map(({ node }) => (
           <Col md="6">
@@ -40,7 +40,7 @@ const serverList = props => {
 
 export const serverListQuery = graphql`query serverListQuery($skip: Int!, $limit: Int!) {
   allMarkdownRemark(
-    sort: {fields: [frontmatter___status, frontmatter___title], order: [ASC, ASC]}
+    sort: [{frontmatter: {status: ASC}}, {frontmatter: {title: ASC}}]
     filter: {frontmatter: {type: {eq: "server"}}}
     limit: $limit
     skip: $skip

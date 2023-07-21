@@ -33,7 +33,7 @@ const authorPosts = ({ data, pageContext }) => {
 
 export const authorQuery = graphql`query ($authorName: String!, $imageUrl: String!) {
   allMarkdownRemark(
-    sort: {fields: [frontmatter___date], order: DESC}
+    sort: {frontmatter: {date: DESC}}
     filter: {frontmatter: {author: {eq: $authorName}}}
   ) {
     totalCount

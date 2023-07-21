@@ -35,7 +35,7 @@ const postList = props => {
 export const postListQuery = graphql`
   query postListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: {frontmatter: {date: DESC}}
       filter: { frontmatter: { type: { eq: "post" } } }
       limit: $limit
       skip: $skip

@@ -28,29 +28,30 @@ const tagPosts = ({ data, pageContext }) => {
 }
 
 export const tagQuery = graphql`
-  query($tag: String!){
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
-    ) {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "MMM Do YYYY")
-            author
-            tags
-          }
-          fields {
-            slug
-          }
-          excerpt
+query($tag:String!) {
+  allMarkdownRemark(
+    sort: {frontmatter: {date: DESC}}
+    filter: {frontmatter: {tags: {in: [$tag]}}}
+  ) {
+    totalCount
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          date(formatString: "MMM Do YYYY")
+          author
+          tags
         }
+        fields {
+          slug
+        }
+        excerpt
       }
     }
   }
+}
+
 `
 
 export default tagPosts
