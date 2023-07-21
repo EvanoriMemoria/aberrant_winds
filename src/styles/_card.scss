@@ -2,6 +2,9 @@
   margin-bottom: 30px;
   background-color: $navbar-dark;
 }
+.card-body {
+  color: $text
+}
 ul.post-tags {
   padding: 0;
   display: inline-flex;
