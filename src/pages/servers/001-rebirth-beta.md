@@ -16,4 +16,4 @@ tags:
  - Server
 ---
 
-This is the official Aberrant Winds' Rebirth of the Night Beta Branch modded minecraft server! This complete overhaul modpack features heavily modified and blended systems, leading to new and difficult experiences. Nearly every aspect of minecraft is built apon and changed in some way in an attempt to generate deeper and more exciting moments during play. This is the beta branch of the Rebirth of the Night modpack server. It is usually updated a day or two after the update is pushed as there is almost always a patch in the following days.
+This is the official Aberrant Winds' Rebirth of the Night Beta Branch modded minecraft server! This complete overhaul modpack features heavily modified and blended systems, leading to new and difficult experiences. Nearly every aspect of minecraft is built upon and changed in some way in an attempt to generate deeper and more exciting moments during play. This is the beta branch of the Rebirth of the Night modpack server. It is usually updated a day or two after the update is pushed as there is almost always a patch in the following days.
