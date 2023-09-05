@@ -25,12 +25,12 @@ a {
 .active-highlight {
   color: $navbar-text;
   font-size: 1.1em;
-  background-color: green;
+  background-color: green !important;
 }
 .inactive-highlight {
   color: $navbar-text;
   font-size: 1.1em;
-  background-color: #990b0b;
+  background-color: #990b0b !important;
 }
 
 .post-date {
@@ -111,7 +111,7 @@ h1 {
   padding-left: 10px;
 }
 
-ul {
+.blanklist {
   list-style: none;
   padding: 0;
 }

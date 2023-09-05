@@ -19,12 +19,12 @@ Below are some helpful links:
 You should also download FTBUtilities for chunk claiming, tpa, and home commands. FTBLib is a required dependency of FTBUtilites. These mods are not required to play on the server, but are heavily recommended to make full use of commands and land claiming.
 
 FTBLib and FTBUtilites Installation Instructions Using Curseforge:
- - Close the game.
- - Click on the modpack.
- - Click on the three dots for the menu -> Open folder -> mods
- - Download [FTBLib][4], and [FTBUtilites][5]. Be sure to get the 1.12.2 versions.
- - Put both downloaded .jar files into the mods folder.
- - Launch the game.
+1. Close the game.
+2. Click on the modpack.
+3. Click on the three dots for the menu -> Open folder -> mods
+4. Download [FTBLib][4], and [FTBUtilites][5]. Be sure to get the 1.12.2 versions.
+5. Put both downloaded .jar files into the mods folder.
+6. Launch the game.
 
 [1]: <https://docs.google.com/document/d/1DGgt4OBx-Vyy3vyT_wgUjjxrXDPFhBpkS9M11shZKAE/edit> "Patch notes for 3.0.1"
 [2]: <https://www.curseforge.com/minecraft/modpacks/rebirth-of-the-night/files/3732110> "Download modpack"

@@ -94,7 +94,7 @@ const SinglePost = ({ data, pageContext }) => {
       </Card>
       <h3 className="text-center">Share this Server</h3>
       <div className="text-center social-share-links">
-        <ul>
+        <ul className="blanklist">
           <li>
             <a
               href={

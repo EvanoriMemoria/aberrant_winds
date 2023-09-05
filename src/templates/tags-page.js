@@ -9,7 +9,7 @@ const tagsPage = ({ pageContext }) => {
   return (
     <Layout pageTitle="All Tags">
       <Seo title="All tags" keywords={["tags", "topics"]} />
-      <ul>
+      <ul className="blanklist">
         {tags.map(tag => (
           <li key={tag} style={{ marginBottom: "10px" }}>
             <Button

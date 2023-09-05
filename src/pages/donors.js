@@ -9,7 +9,7 @@ const DonorPage = () => {
   return (
     <Layout pageTitle="Thanks to all our awesome supporters!" pageId="supporters">
       <Seo title="Thanks to all our awesome supporters!" />
-      <ul>
+      <ul className="blanklist">
         {donators.map(donators => (
           <li key={donators} style={{ marginBottom: "10px" }}>
             <Card className="donor-card-list">
