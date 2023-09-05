@@ -11,7 +11,7 @@ image_alt: 'Valhelsia 3 Minecraft Modpack Logo'
 image: '../../images/valhelsia.png'
 address: 'valhelsia.aberrantwinds.xyz'
 modsDownload: 'https://www.curseforge.com/minecraft/modpacks/valhelsia-3'
-seasonal: 'true'
+seasonal: 'false'
 tags:
  - Server
 ---
