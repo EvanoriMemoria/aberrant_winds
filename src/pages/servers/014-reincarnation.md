@@ -1,5 +1,5 @@
 ---
-title: 'Aberrant Lives Minecraft Modpack'
+title: ' Reincarnation Minecraft Modpack'
 date: 2020-02-26
 author: 'fergenbergel'
 creator: 'fergenbergel and DAQEM'
@@ -8,16 +8,33 @@ subtype: 'gaming'
 status: 'Active'
 publicity: 'Public'
 image_alt: 'Aberrant Lives by Aberrant Winds'
-image: '../../images/aberrant-lives-tile.png'
+image: '../../images/reincarnation.png'
 address: 'newlife.aberrantwinds.xyz'
 modsDownload: 'https://www.curseforge.com/minecraft/modpacks/rebirth-of-the-night/files'
-seasonal: 'false'
+seasonal: 'true'
 tags:
  - Server
 ---
 
+You're a being just like any other, unique in some aspects, but affected nevertheless by a similarity that binds all, death. You begin with just six lives to do with as you please. Perhaps you'll start the first as a copper golem, creating powerful tools out of not but copper. Alas, whilst mining your cavern floods and as a being of metal, you fall to pieces, beginning the next chapter of your lives. Each origin has it's own upsides and downsides, some are more powerful than others, but all change the default gameplay to some degree.
+
+You could come back as any of:
+
+- Chimaera
+- Drakonwither
+- Flea
+- Goolien
+- Ignisian
+- Jellyfish
+- Lost Draconian
+- Moth
+- Mouse
+- Ninetails
+- Ram
+- Shadow
+- And 100+ More!
+
 ---
-## Modpack Info
 
 The goal of this pack is to have a fun and accessible way of playing semi-hardcore with friends.
 
