@@ -9,8 +9,8 @@ status: 'Active'
 publicity: 'Public'
 image_alt: 'Aberrant Lives by Aberrant Winds'
 image: '../../images/reincarnation.png'
-address: 'newlife.aberrantwinds.xyz'
-modsDownload: 'https://www.curseforge.com/minecraft/modpacks/rebirth-of-the-night/files'
+address: 'carn.aberrantwinds.xyz'
+modsDownload: 'https://modrinth.com/modpack/aberrant-reincarnation'
 seasonal: 'true'
 tags:
  - Server
